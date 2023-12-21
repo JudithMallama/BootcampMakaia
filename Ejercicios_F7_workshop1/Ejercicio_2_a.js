@@ -28,5 +28,5 @@ console.log("El punto C: "+puntoC);
 
 //  ***********************************************************************************
 // d. (x/y)(z+w);
-const puntoD = (x+y)*(z+w);
+const puntoD = (x/y)*(z+w);
 console.log("Si se define z=2, El punto D: "+puntoD);
