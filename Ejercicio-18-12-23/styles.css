@@ -1,0 +1,21 @@
+header {
+    background-color: aquamarine;
+  }
+  
+  .custom-article{
+    font-size: 20px;
+  }
+  /* 0010 */
+  
+  #link-google {
+    color: red;
+  }
+  
+  #link-google:hover {
+   background-color: burlywood;
+  }
+  /*0110*/
+  
+  *{
+    color: violet !important
+  }
