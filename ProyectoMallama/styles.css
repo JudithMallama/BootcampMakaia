@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+:root{
+    --tipografia-title:'Cormorant Garamond', serif;
+    --tipografia-menu:'Manrope', sans-serif;
+    --primary-color: #093931;
+    --title-color:#F5D38E; 
+    --menu-hover:#F2C66D;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.encabezado{
+    background-color: var(--primary-color);
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.encabezado-titulo{
+    margin: 10px 100px;
+}
+
+.encabezado-titulo h1{
+    font-family: var(--tipografia-title);
+    color: var(--title-color);
+    font-size: 30px;
+    line-height: 46px;
+}
+
+.encabezado-menu{
+    display: flex;
+    width: 431px;
+    height: 43px;
+    top: 10px;
+    left: 791px;
+    margin: 10px 100px;
+    text-align: center;
+}
+
+.encabezado-menu ul{
+    width: 91.26px;
+    height: 43px;
+    left: 340.04px;
+    padding: 10.5px 0px;
+    border-radius: 4px;   
+}
+
+.encabezado-menu a{
+    color: white;
+    text-decoration: none;
+    font-family: var(--tipografia-menu);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.encabezado-menu a:hover{
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--menu-hover);
+    border-bottom: 2px solid var(--menu-hover);
+}
+
+.encabezado-menu img:hover{
+    cursor: pointer;
+    color: var(--menu-hover);
+}
+
+.principal{
+    background-color: var(--primary-color);
+    background-image: url('img/VectorFondo.png');
+    background-size: cover; 
+    background-position: center;
+    height: 821px;
+    display: flex;   
+    padding: 30px 100px; 
+}
+
+.principal-texto{
+    font-family: var(--tipografia-title);
+    color: var(--title-color);
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 94px;
+}
+
+.principal-boton{
+    background: transparent; 
+    border: 1px solid white; 
+    width: 200px;
+    height: 52px;
+    top: 538px;
+    left: 132px;
+    padding: 12px, 59px, 12px, 59px;
+    border-radius: 26px;
+    padding: 10px 20px; 
+    color: white; 
+    font-family: var(--tipografia-menu);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+.principal-img{
+    position: relative;
+    margin: 0 100px;
+}
+
+
+.imagen-uno{
+    width: 407px;
+    height: 543px;
+    top: 139px;
+    left: 741px;
+    border-radius: 8px; 
+    padding: 200;
+}
+
+
+
