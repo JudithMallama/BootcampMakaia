@@ -23,7 +23,7 @@
 }
 
 .encabezado-titulo{
-    margin: 10px 100px;
+    margin: 10px 70px;
 }
 
 .encabezado-titulo h1{
@@ -39,7 +39,7 @@
     height: 43px;
     top: 10px;
     left: 791px;
-    margin: 10px 100px;
+    margin: 10px 70px;
     text-align: center;
 }
 
@@ -74,23 +74,22 @@
 .principal{
     background-color: var(--primary-color);
     background-image: url('img/VectorFondo.png');
-    background-size: cover; 
-    background-position: center;
-    height: 821px;
-    display: flex;   
-    padding: 30px 100px; 
+    display: flex; 
+    align-items: center;  
+    padding: 30px 70px; 
+    margin-bottom: 15px;
 }
 
 .principal-texto{
     font-family: var(--tipografia-title);
     color: var(--title-color);
-    font-size: 72px;
+    font-size: 70px;
     font-weight: 400;
     line-height: 94px;
 }
 
 .principal-boton{
-    background: transparent; 
+    background: transparent;  
     border: 1px solid white; 
     width: 200px;
     height: 52px;
@@ -122,5 +121,95 @@
     padding: 200;
 }
 
+.principal-img{
+    display: flex;
+    position: relative;
+    
+}
 
+.imagen-uno img{
+    width: 407px;
+    height: 543px;
+    border-radius: 8px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.principal-dos img{
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    width: 241px;
+    height: 321px;
+    border-radius: 121px 121px 0px 0px;
+}
+
+.second-content{
+    margin: 0 150px;
+    margin-bottom: 15px;
+    
+}
+
+.second-content-menu{
+    display: flex;
+    justify-content:center;
+}
+
+.second-content-menu ul{
+    padding: 0 20px;
+    text-align: center;
+}
+
+.second-content-menu img{
+    width: 62px;
+    height: 62px;
+    top: 36px;
+    left: 1093px;
+}
+
+.second-content-title{
+    font-family: var(--tipografia-title);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.second-content-text{
+    font-family: var(--tipografia-menu);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.third-content{
+    height: 506px;
+    top: 1101px;
+    margin: 0 70px;
+    display: flex;
+}
+.third-content-A{
+    width: 280px;
+}
+
+.third-content-A-title{
+    font-family: var(--tipografia-title);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0D554A;
+
+}
+
+.third-content-B{
+    width: 1000px;
+    top: 1101px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+}
 
