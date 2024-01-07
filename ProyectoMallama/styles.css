@@ -7,6 +7,7 @@
     --primary-color: #093931;
     --title-color:#F5D38E; 
     --menu-hover:#F2C66D;
+    --boton-color:#0D554A; 
 }
 
 *{
@@ -77,7 +78,7 @@
     display: flex; 
     align-items: center;  
     padding: 30px 70px; 
-    margin-bottom: 15px;
+    margin-bottom: 80px;
 }
 
 .principal-texto{
@@ -147,7 +148,7 @@
 
 .second-content{
     margin: 0 150px;
-    margin-bottom: 15px;
+    margin-bottom: 80px;
     
 }
 
@@ -185,13 +186,14 @@
 }
 
 .third-content{
-    height: 506px;
     top: 1101px;
     margin: 0 70px;
     display: flex;
+    margin-bottom: 80px;
 }
+
 .third-content-A{
-    width: 280px;
+    width: 300px;
 }
 
 .third-content-A-title{
@@ -202,7 +204,36 @@
     letter-spacing: 0em;
     text-align: left;
     color: #0D554A;
+    margin-bottom: 10px;
 
+}
+
+.third-content-A-text{
+    margin: 5px;
+    font-family: var(--tipografia-menu);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.third-content-A-Boton{
+    background: transparent;  
+    border: 1px solid var(--boton-color); 
+    width: 200px;
+    height: 52px;
+    top: 280px;
+    left: 132px;
+    padding: 12px, 59px, 12px, 59px;
+    border-radius: 26px;
+    padding: 10px 20px; 
+    color: var(--boton-color); 
+    font-family: var(--tipografia-menu);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    cursor: pointer;
 }
 
 .third-content-B{
@@ -211,5 +242,33 @@
     overflow-x: auto;
     white-space: nowrap;
     display: flex;
+    
+}
+
+.third-content-B img{
+    width: 260px;
+    height: 320px;
+    border-radius: 8px; 
+    margin-left: 15px;
+}
+
+.third-content-B-title{
+    font-family: var(--tipografia-title);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 25px;
+}
+
+.third-content-B-precio{
+    font-family: var(--tipografia-menu);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 25px;
 }
 
