@@ -387,6 +387,7 @@
     background-color: var(--primary-color);
     color: white;
     display: flex;
+    margin-bottom: -10px;
 }
 
 .seventh-content-A{
@@ -425,15 +426,34 @@
 }
 
 .seventh-content-B-text{
-    padding: 50px;
+    padding: 40px;
+    font-family: var(--tipografia-menu);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+
 }
 
 .seventh-content-B-name{
     padding: 0 40px;
+    font-family: var(--tipografia-menu);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+
 }
 
 .seventh-content-B-country{
     padding: 0 40px;
+    font-family: var(--tipografia-menu);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 .seventh-content-B-next{
@@ -470,6 +490,105 @@
     background-size: 35px 35px;
     background-repeat: no-repeat; 
     background-position: 10px center;
+}
+.footer{
+    background-color: var(--primary-color);
+    padding: 0 100px;
+    color: white;
+}
+
+.footer-A{
+    display: flex;
+}
+
+.footer-columnas{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.columna{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    font-family: var(--tipografia-menu);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.footer-subs{
+    margin-top: 20px;
+    margin-left: 200px; 
+}
+
+.footer-subs-tittle{
+    font-family: var(--tipografia-title);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.footer-subs-text{
+    font-family: var(--tipografia-menu);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.footer-subs input{
+    width: 240px;
+    height: 22px;
+    top: 114px;
+    left: 900px;
+    padding: 7px 6px 6px 6px;
+    border-radius: 18px 0px 0px 18px;
+    border: 1px;
+    font-family: var(--tipografia-menu);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.footer-subs button{
+    background-color: #F2C66D;
+    width: 114px;
+    height: 36px;
+    top: 114px;
+    left: 1190px;
+    padding: 7px 23.5px 7px 24.5px;
+    border-radius: 0px 18px 18px 0px;
+    font-family: var(--tipografia-menu);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.footer-B{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes-sociales img{
+    padding: 0 5px;
+    width: 30px;
+    height: 30px;
+    top: 3px;
+    left: 3px;
 }
 
 
