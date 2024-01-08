@@ -352,7 +352,6 @@
 
 }
 
-
 .sixth-content-img{
     position: relative;
     display: inline-block;
@@ -382,5 +381,96 @@
     background-size: 20px 20px;
     background-repeat: no-repeat; 
     background-position: 10px center;
-
 }
+
+.seventh-content{
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+}
+
+.seventh-content-A{
+    padding: 100px;
+}
+
+.seventh-content-title{
+    font-family: var(--tipografia-title);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 68px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.seventh-content-text{
+    width: 264px;
+    height: 104px;
+    top: 249px;
+    left: 132px; 
+    font-family: var(--tipografia-menu);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.seventh-content-B{
+    position: relative;
+    background-color: #171A1F4D;
+    margin: 70px;
+    display: flex;
+    
+}
+
+.seventh-content-B-text{
+    padding: 50px;
+}
+
+.seventh-content-B-name{
+    padding: 0 40px;
+}
+
+.seventh-content-B-country{
+    padding: 0 40px;
+}
+
+.seventh-content-B-next{
+    position: absolute;
+    top: 81%;
+    left: 70%; 
+    transform: translate(50%, 50%); 
+    height: 10px;
+    width: 10px;
+    background-color:transparent; 
+    border: 0px none white;
+    padding: 35px 35px; 
+    cursor: pointer; 
+    z-index: 1;
+    background-image: url('img/Icono_back_boton.png');
+    background-size: 35px 35px;
+    background-repeat: no-repeat; 
+    background-position: 10px center;
+}
+
+.seventh-content-B-back{
+    position: absolute;
+    top: 81%;
+    left: 80%; 
+    transform: translate(50%, 50%); 
+    height: 10px;
+    width: 10px;
+    background-color:transparent; 
+    border: 0px none white;
+    padding: 35px 35px; 
+    cursor: pointer; 
+    z-index: 1;
+    background-image: url('img/Icono_next_boton.png');
+    background-size: 35px 35px;
+    background-repeat: no-repeat; 
+    background-position: 10px center;
+}
+
+
+
