@@ -3,7 +3,7 @@
 
 :root{
     --tipografia-title:'Cormorant Garamond', serif;
-    --tipografia-menu:'Manrope', sans-serif;
+    --tipografia-text:'Manrope', sans-serif;
     --primary-color: #093931;
     --title-color:#F5D38E; 
     --menu-hover:#F2C66D;
@@ -55,7 +55,7 @@
 .encabezado-menu a{
     color: white;
     text-decoration: none;
-    font-family: var(--tipografia-menu);
+    font-family: var(--tipografia-text);
     font-size: 14px;
     font-weight: 400;
 }
@@ -100,7 +100,7 @@
     border-radius: 26px;
     padding: 10px 20px; 
     color: white; 
-    font-family: var(--tipografia-menu);
+    font-family: var(--tipografia-text);
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
@@ -199,7 +199,7 @@
 }
 
 .second-content-text{
-    font-family: var(--tipografia-menu);
+    font-family: var(--tipografia-text);
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -231,7 +231,7 @@
 
 .third-content-A-text{
     margin: 5px;
-    font-family: var(--tipografia-menu);
+    font-family: var(--tipografia-text);
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
@@ -250,7 +250,7 @@
     border-radius: 26px;
     padding: 10px 20px; 
     color: var(--boton-color); 
-    font-family: var(--tipografia-menu);
+    font-family: var(--tipografia-text);
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
@@ -284,7 +284,7 @@
 }
 
 .third-content-B-precio{
-    font-family: var(--tipografia-menu);
+    font-family: var(--tipografia-text);
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -427,7 +427,7 @@
 
 .seventh-content-B-text{
     padding: 40px;
-    font-family: var(--tipografia-menu);
+    font-family: var(--tipografia-text);
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
@@ -437,7 +437,7 @@
 
 .seventh-content-B-name{
     padding: 0 40px;
-    font-family: var(--tipografia-menu);
+    font-family: var(--tipografia-text);
     font-size: 16px;
     font-weight: 700;
     line-height: 30px;
@@ -448,7 +448,7 @@
 
 .seventh-content-B-country{
     padding: 0 40px;
-    font-family: var(--tipografia-menu);
+    font-family: var(--tipografia-text);
     font-size: 15px;
     font-weight: 400;
     line-height: 26px;
@@ -687,6 +687,126 @@
         top: 186px;
         left: 132px;
         border-radius: 8px;
+        margin: ;
+    }
+
+    .third-content-A-title {
+        
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .fourth-content-title {
+        font-size: 35px;
+    }
+
+    .fourth-content-img p {
+         font-size: 15px;
+        top:80%;
+    }
+
+    .sixth-content-img{
+        height: 0px;
+    }
+            
+
+
+    .sixth-content-img img {
+        width: 530px;
+        top: -20px;
+        margin: -20px -75px;
+        margin-bottom: 0px;
+    }
+
+    .sixth-content-boton {
+       
+        top: 10%;
+        left: 40%;
+        transform: translate(50%, 50%);
+        
+    }
+
+    .seventh-content-A 
+    {
+        padding: 70px 0px;
+        margin: 5px 5px;
+    }
+    .seventh-content-title {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+
+    .seventh-content-B {
+        display: initial;
+        position: absolute;
+        background-color: #171A1F4D;
+        margin: 5px 70px;
+        left: 200px;
+    }
+
+    .seventh-content-B img {
+        width: 250px;
+        height: 200px;
+        margin: 0 15px;
+        padding: 0;
+    }
+
+    .seventh-content-B-text {
+        padding: 5px 5px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+
+    .seventh-content-B-name {
+        padding: 0 5px;
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .seventh-content-B-country {
+        padding: 0 5px;
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .seventh-content {
+        margin-bottom: 0px;
+        height: 380px;
+    }
+
+    .seventh-content-B-next {
+        top: 79%;
+        left: 40%;
+    }
+    .seventh-content-B-back {
+        top: 79%;
+        left: 60%;
+    }
+
+    .footer {
+        padding: 0 5px;
+    }
+
+    .footer-columnas {
+        padding:  20px 0px;
+    }
+
+    .footer-subs {
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+    .footer-subs input {
+        width: 130px;
+        height: 22px;
+       
+    }
+
+    .footer-subs button {
+
+        width: 100px;
+       
     }
 
   
