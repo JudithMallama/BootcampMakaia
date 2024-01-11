@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+:root{
+    --tipografia-title:'Cormorant Garamond', serif;
+    --tipografia-text:'Manrope', sans-serif;
+    --primary-color: #093931;
+    --title-color:#F5D38E; 
+    --menu-hover:#F2C66D;
+    --boton-color:#0D554A; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header, section, footer{
+    margin: 0;
+    padding: 5px 150px;
+}
+
+header, footer, .first-part,.third-part{
+    background-color: var(--primary-color);
+}
+
+.title{
+    font-family: var(--tipografia-title);
+}
+
+.text{
+    font-family: var(--tipografia-text);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 62px;
+
+}
+
+header .title{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--title-color);
+}
+
+header a{
+    margin-left: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+}
+
+header a:hover{
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--menu-hover);
+    border-bottom: 2px solid var(--menu-hover);
+}
+
+.first-part{
+    background-image: url('img/VectorFondo.png');
+    display: flex;
+    justify-content: space-between;
+    height: 621px;
+}
+section .title{
+    padding-top: 100px;
+}
+
+.first-part p{
+    font-family: var(--tipografia-title);
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 94px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--title-color);
+    padding-right: 6px;
+}
+
+.button-shop-now{
+    background: transparent;  
+    border: 1px solid white; 
+    width: 200px;
+    height: 52px;
+    top: 538px;
+    left: 132px;
+    padding: 12px 59px 12px 59px;
+    border-radius: 26px;
+    padding: 10px 20px; 
+    color: white; 
+    font-family: var(--tipografia-text);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+.first-part-img{
+    display: flex;
+}
+
+.first-part-img-uno img{
+    width: 357px;
+    height: 443px;
+    top: 139px;
+    left: 741px;
+    border-radius: 8px;
+    padding-right: 120px;
+    padding-top: 60px;
+}
+
+.first-part-img-dos{
+    display: flex;
+    position: relative; 
+    justify-content: center;
+}
+
+.first-part-img-dos img{
+    width: 240px;
+    height: 330px; 
+    position: absolute;
+    top: 150px;
+    left: -220px;
+    border-radius: 121px 121px 0px 0px;
+}
+
+.first-part-button-play{
+    position: absolute;
+    top: 30%;
+    left: 30%; 
+    transform: translate(-250%, 50%); 
+    height: 10px;
+    width: 10px;
+    background-color: transparent; 
+    color: transparent; 
+    border: 2px solid white;
+    padding: 20px 20px; 
+    border-radius: 100%;
+    cursor: pointer; 
+    z-index: 1;
+    background-image: url('img/Vector-play-principal.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat; 
+    background-position: 10px center;
+}
+
+
+/*Responsive 1*/
+@media screen and (max-width: 830px){
+    header, section, footer{
+        margin: 0;
+        padding: 5px 50px;
+    }
+    .first-part{
+        height: 521px;
+    }
+
+    .first-part p{
+        font-size: 52px;
+        font-weight: 400;
+        line-height: 74px;
+    }
+
+    .button-shop-now{ 
+        width: 150px;
+        height: 42px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .first-part-img-uno img{
+        width: 307px;
+        height: 443px;
+        top: 139px;
+        left: 741px;
+    }
+
+    .first-part-img-dos img{
+        width: 210px;
+        height: 300px; 
+    }
+
+    .first-part-button-play{
+        top: 30%;
+        left: 30%; 
+        transform: translate(-300%, 200%); 
+    }
+
+
+    
+}
+
+/*Responsive 2*/
+@media screen and (max-width:650px){
+    header, section, footer{
+        margin: 0;
+        padding: 5px 5px;
+    }
+
+    .first-part{
+        height: 390px;
+        padding: 0;
+    }
+    section .title{
+        padding-top: 20px;
+    }
+
+    .first-part p{
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 54px;
+    }
+
+    
+    .button-shop-now{ 
+        width: 100px;
+        height: 32px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .first-part-img-uno img{
+        width: 207px;
+        height: 323px;
+        top: 139px;
+        left: 741px;
+        padding-top: 40px;
+    }
+
+    .first-part-img-dos img{
+        width: 150px;
+        height: 180px; 
+    }
+
+    .first-part-button-play{
+        top: 30%;
+        left: 30%; 
+        transform: translate(-400%, 230%); 
+    }
+}
