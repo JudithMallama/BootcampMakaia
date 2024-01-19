@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+:root{
+    --tipografia-title:'Cormorant Garamond', serif;
+    --tipografia-text:'Manrope', sans-serif;
+    --primary-color: #093931;
+    --title-color:#F5D38E; 
+    --menu-hover:#F2C66D;
+    --boton-color:#0D554A; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header, section, footer{
+    margin: 0;
+    padding: 5px 150px;
+}
+
+header, footer, .first-part,.third-part{
+    background-color: var(--primary-color);
+}
+
+article{
+    margin-bottom:40px;
+}
+
+.title{
+    font-family: var(--tipografia-title);
+}
+
+.text{
+    font-family: var(--tipografia-text);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 62px;
+
+}
+
+header .title{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--title-color);
+}
+
+header a{
+    margin-left: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+}
+
+header a:hover{
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--menu-hover);
+    border-bottom: 2px solid var(--menu-hover);
+}
+
+@media screen and (max-width: 890px){
+    header, section, footer {
+        padding: 5px 50px;
+    }
+    
+}
+
+@media screen and (max-width:690px){
+    header, section, footer{
+        margin: 0;
+        padding: 5px 5px;
+    }
+}
