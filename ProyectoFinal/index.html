@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homepage</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
 </head>
 <body>
 
@@ -13,10 +16,10 @@
             <h1>Darling.</h1>
         </div>
         <ul class="text">
-            <a href="">Home</a>
-            <a href="">Shop</a>
-            <a href="">Collections</a>
-            <a href="">About</a>
+            <a href="index.html">Home</a>
+            <a href="/ProyectoFinal/index/product_listing.html">Shop</a>
+            <a href="/ProyectoFinal/index/product_details.html">Collections</a>
+            <a href="/ProyectoFinal/index/checkout_cart.html">About</a>
             <a href="">Contact</a>
             <a href=""><img src="img/icono_perfil.png" alt=""></a>
             <a href=""><img src="img/icono_shopping.png" alt=""></a>
@@ -203,31 +206,37 @@
     </section>
 
     <footer>
-        <section class="footer-A">
-            <p class="title">Darling.</p>
-            <article class="footer-columnas">
-                <div class="columna">
-                    <p>Shop</p>
-                    <p>Collections</p>
-                    <p>About</p>
-                </div>
-                <div class="columna">
-                    <p>Contact</p>
-                    <p>Privacy</p>
-                    <p>Terms</p>
-                </div>
-            </article>
+        <article class="footer-A">
 
-            <section class="footer-subs">
+            <div class="columna">
+                <p class="title">Darling.</p>
+            </div>
+
+            <div class="columnaB">
+                <p>Shop</p>
+                <p>Collections</p>
+                <p>About</p>
+            </div>
+
+            <div class="columnaB">
+                <p>Contact</p>
+                <p>Privacy</p>
+                <p>Terms</p>
+            </div>
+
+            <div class="columna">
                 <p class="footer-subs-tittle">Subscribe to our newsletter</p>
                 <p class="footer-subs-text">For product announcements and exclusive insights</p>
-                <span class="icono-correo"></span>
-                <input type="email" placeholder="Ingrese su correo">
+                <div class="email-input-container">
+                    <i class="far fa-envelope" aria-hidden="true"></i>
+                    <input type="email" class="correo-input" placeholder="Ingrese su correo">
+                </div>
                 <button>Subscribe</button>
-            </section>
-        </section>
-        
-        <section class="footer-B">
+            </div>
+
+        </article>
+
+        <article class="footer-B">
             <div>© 2022 Brand, Inc.</div>
             <div class="redes-sociales">
                 <a href=""><img src="img/icono_twitter.png" alt=""></a>
@@ -235,8 +244,7 @@
                 <a href=""><img src="img/icono_linkedin.png" alt=""></a>
                 <a href=""><img src="img/icono_youtube.png" alt=""></a>
             </div>
-        </section> 
-
+        </article>
     </footer>
     
 </body>
