@@ -78,6 +78,7 @@ footer section {
     background-image: url('/ProyectoFinal/img/VectorFondo.png');
     text-align: center;
     height: 450px;
+    margin-bottom: 50px;
 }
 
 .first-part .title{
@@ -88,6 +89,9 @@ footer section {
     text-align: center;
     color: var(--title-color);
     margin-bottom: 20px;
+    display: grid;
+    place-items: center;
+    height: 30vh;
 
 }
 
@@ -126,6 +130,131 @@ footer section {
     padding-left: 20px;
 }
 
+/*second part botones*/
+
+.botones-A{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap; 
+    margin-bottom: 20px;
+}
+
+.botones-A ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.botones-A button {
+    width: 148.6px;
+    height: 38px;
+    padding: 8px 0px 8px 0px;
+    border-radius: 19px;
+    position: relative;
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    font-family: var(--tipografia-text);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--boton-color);
+}
+
+.botones-A button:hover{
+    background-color:var(--boton-color);
+    color: white;
+}
+
+.custom-input {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.custom-input label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: var(--tipografia-text);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.custom-input .arrow-icon {
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.custom-input .underline {
+    position: absolute;
+    width: 120%;
+    height: 2px;
+    background-color: #9095A0;
+    bottom: 0;
+    left: 0;
+}
+
+button:not(:last-child):after {
+    content: '';
+    position: absolute;
+    height: 50%;
+    width: 1px;
+    background-color: #9AEFE2;
+    right: 0;
+    top: 25%;
+}
+
+/*tercera parte*/
+
+section .third-part-imgA{
+    margin: 0px;
+    padding: 5px 10px;
+}
+.third-part-imgA{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.third-part-imgA div{
+    border: 1px solid gainsboro; 
+    margin: 10px 10px;
+    border-radius: 8px;
+    width: 276px;
+    height: 404px;
+}
+
+
+
+.third-part-imgA .title{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.third-part-imgA .text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 5px;
+}
+
+
 /*Shoppin Second Part A*/
 
 .second-part-A{
@@ -137,6 +266,7 @@ footer section {
 
 .second-part-A ul{
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .second-part-A ul img{
@@ -295,6 +425,14 @@ footer{
         padding: 5px 50px;
     }
 
+    .first-part .title{
+        font-size: 52px;
+        margin-bottom: 10px;
+        display: grid;
+        place-items: center;
+        height: 40vh;
+    }
+
     .search-input input {
         width: 500px
     }
@@ -308,6 +446,17 @@ footer{
         font-size: 14px;
         line-height: 24px;
     }  
+
+    .botones-A{
+        justify-content: center;
+    }
+
+    .botones-A ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap; 
+    }
 }
 
 @media screen and (max-width:690px){
@@ -318,7 +467,15 @@ footer{
     }
 
     .search-input input {
-        width: 100%;
+        width: 80%;
+    }
+
+    .first-part .title{
+        font-size: 32px;
+        margin-bottom: 5px;
+        display: grid;
+        place-items: center;
+        height: 30vh;
     }
 
     /*Footer*/
