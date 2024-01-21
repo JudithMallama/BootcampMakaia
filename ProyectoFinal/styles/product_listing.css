@@ -220,6 +220,7 @@ section .third-part-imgA{
     margin: 0px;
     padding: 5px 10px;
 }
+
 .third-part-imgA{
     display: flex;
     flex-wrap: wrap;
@@ -234,7 +235,9 @@ section .third-part-imgA{
     height: 404px;
 }
 
-
+.fourth-part-A{
+    margin-left: 40px;
+}
 
 .third-part-imgA .title{
     font-size: 24px;
@@ -254,6 +257,87 @@ section .third-part-imgA{
     margin-left: 5px;
 }
 
+/*Cuarta parte*/
+
+.fourth-part {
+    margin: 0;
+    padding: 0px 0px;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.fourth-part div{
+    border: 1px solid gainsboro; 
+    border-radius: 8px;
+}
+
+.fourth-part .title{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.fourth-part .text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.fourth-part-B{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fourth-part-B div{
+    margin: 10px 10px;
+}
+
+.fourth-part-B div img{
+    margin-left: 0px;
+    width: 278px;
+    border-radius: 8px;
+}
+
+/*Quinta parte botones*/
+
+.fifth-part-botones{
+    display: flex;
+    justify-content: center;
+}
+
+.fifth-part-botones button{
+    margin: 0 20px;
+    font-family: var(--tipografia-text);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #9095A0;
+    border: none; 
+    background-color: transparent; 
+    padding: 10px 20px; 
+}
+
+.fifth-part-botones button:hover{
+    color: var(--boton-color);
+    border: 1px solid var(--boton-color); 
+    background-color: transparent; 
+    border-radius: 100%;
+}
+
+.fifth-part-botones button{
+    margin: 0 10px;
+    padding: 10px 10px; 
+}
 
 /*Shoppin Second Part A*/
 
@@ -457,6 +541,24 @@ footer{
         display: flex;
         flex-wrap: wrap; 
     }
+
+    .fourth-part-A div img{
+        width: 178px;
+    }
+
+    .fourth-part-B div img{
+        width: 178px;
+    }
+
+    .fourth-part .title{
+        text-align: center;
+    }
+    
+    .fourth-part .text{
+        text-align: center;
+    }
+    
+    
 }
 
 @media screen and (max-width:690px){
@@ -476,6 +578,11 @@ footer{
         display: grid;
         place-items: center;
         height: 30vh;
+    }
+
+    .fifth-part-botones button{
+        margin: 0 5px;
+        padding: 0px 0px; 
     }
 
     /*Footer*/
