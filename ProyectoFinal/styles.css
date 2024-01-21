@@ -361,7 +361,6 @@ header a:hover{
     color: white;
 }
 
-
 .third-part-A .title{
     font-size: 48px;
     font-weight: 600;
@@ -544,22 +543,26 @@ footer{
     position: relative;
     display: inline-block;
     
-  }
+}
   
-  .email-input-container i {
+.email-input-container i {
     position: absolute;
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
     
-  }
+}
   
-  .email-input-container input {
+.email-input-container input {
     padding-left: 30px;
     color: white;
     background-color: var(--primary-color); 
     border: 1px solid white;
-  }
+}
+
+.email-input-container input::placeholder {
+    color: white;
+}
 
 .correo-input {
     color: white;
@@ -576,6 +579,7 @@ footer{
 
 /*Responsive 1*/
 @media screen and (max-width: 890px){
+
     header, section, footer{
         margin: 0;
         padding: 5px 50px;
@@ -711,6 +715,7 @@ footer{
 
 /*Responsive 2*/
 @media screen and (max-width:690px){
+
     header, section, footer{
         margin: 0;
         padding: 5px 5px;
@@ -805,6 +810,7 @@ footer{
         text-align: center;
         margin-bottom: 20px;
     }
+
     .columna .title{
         text-align: center;
     }
@@ -819,6 +825,5 @@ footer{
     
     .footer-subs-text{
         text-align: center;
-    }
-    
+    } 
 }
