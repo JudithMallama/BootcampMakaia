@@ -158,6 +158,7 @@ header a:hover{
     background-repeat: no-repeat; 
     background-position: 10px center;
 }
+/*Second part*/
 
 .second-part-A{
     display: flex;
@@ -654,6 +655,8 @@ footer{
         transform: translate(-300%, 200%); 
     }
 
+    /*Second part*/
+
     .second-part-B{
         width: 100%;
     }
@@ -840,6 +843,7 @@ footer{
         padding: 20px 20px; 
     }
 
+    /*third part*/
     .third-part {
         text-align: center;
         display: block;
@@ -850,12 +854,13 @@ footer{
         margin-top: 5px;
     }
 
-    /*third part*/
     .third-part-B {
         display: grid;
         place-items: center; /* Centra los elementos tanto horizontal como verticalmente */
         margin-top: 50px;
     }
+
+    /*Footer*/
 
     .footer-A{
         display: block;
