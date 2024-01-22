@@ -354,20 +354,36 @@ header a:hover{
     background-repeat: no-repeat; 
     background-position: 10px center;
 }
+/*Third part*/
 
 .third-part{
-    display: flex;
-    padding-top: 50px;
+    padding: 5px 100px;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-top: 60px 0;
+    align-content: center;
+}
+
+.third-part-A{
+   flex: 50%;
+   max-width: 100%;
+}
+
+.third-part-A, .third-part-B {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 0px;/* Ajusta el espacio interior según tus necesidades */
 }
 
 .third-part-A .title{
+    margin-top: 100px;
     font-size: 48px;
     font-weight: 600;
     line-height: 68px;
     letter-spacing: 0em;
     text-align: left;
-    width: 250px;
 }
 
 .third-part-A .text{
@@ -379,53 +395,28 @@ header a:hover{
     width: 250px;
 }
 
-
-.third-part-B-next{
-    position: absolute;
-    top: 81%;
-    left: 70%; 
-    transform: translate(50%, 50%); 
-    height: 10px;
-    width: 10px;
-    background-color:transparent; 
-    border: 0px none white;
-    padding: 35px 35px; 
-    cursor: pointer; 
-    z-index: 1;
-    background-image: url('img/Icono_back_boton.png');
-    background-size: 35px 35px;
-    background-repeat: no-repeat; 
-    background-position: 10px center;
-}
-
-.third-part-B-back{
-    position: absolute;
-    top: 81%;
-    left: 80%; 
-    transform: translate(50%, 50%); 
-    height: 10px;
-    width: 10px;
-    background-color:transparent; 
-    border: 0px none white;
-    padding: 35px 35px; 
-    cursor: pointer; 
-    z-index: 1;
-    background-image: url('img/Icono_next_boton.png');
-    background-size: 35px 35px;
-    background-repeat: no-repeat; 
-    background-position: 10px center;
-}
-
-.third-part-B{
+.third-part-B {
+    flex: 20%;
     display: flex;
     background-color: #171A1F4D;
-    position: relative;
-    left: 5%;
+    margin-top: 50px;
+}
+
+.third-part-B div {
+    flex: 80%;
     box-sizing: border-box;
 }
 
+.third-part-B img {
+    flex: 20%;
+    max-width: 50%; /* Asegura que la imagen no exceda su contenedor */
+    width: 300px;
+    height: 100%;
+}
+
 .third-part-B .text{
-    padding: 40px 40px;
+    max-width: 100%;
+    padding: 40px 10px;
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
@@ -433,7 +424,7 @@ header a:hover{
 }
 
 .third-part-B-name{
-    padding: 0 40px;
+    padding: 0 10px;
     font-family: var(--tipografia-text);
     font-size: 16px;
     font-weight: 700;
@@ -443,7 +434,7 @@ header a:hover{
 }
 
 .third-part-B-country{
-    padding: 0 40px;
+    padding: 0 10px;
     font-family: var(--tipografia-text);
     font-size: 15px;
     font-weight: 400;
@@ -451,6 +442,45 @@ header a:hover{
     letter-spacing: 0em;
     text-align: left;
 }
+
+.third-part-B div {
+    position: relative;
+    flex: 60%;
+    box-sizing: border-box;
+    padding: 0 20px; /* Ajusta el espacio interior según tus necesidades */
+}
+
+.third-part-B-botones {
+    position: absolute;
+    bottom: -35px; /* Ajusta la distancia desde el borde inferior según tus necesidades */
+    left: 0; /* Ajusta la posición horizontal según tus necesidades */
+    width: 100%; /* Hace que los botones ocupen todo el ancho del div */
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-part-B-next, .third-part-B-back {
+    height: 10px;
+    width: 10px;
+    background-color:transparent; 
+    border: 0px none white;
+    padding: 35px 35px; 
+    cursor: pointer; 
+    z-index: 1;
+    background-size: 35px 35px;
+    background-repeat: no-repeat; 
+    background-position: 10px center;
+}
+
+.third-part-B-next{
+    background-image: url('img/Icono_back_boton.png');
+}
+
+.third-part-B-back{
+    background-image: url('img/Icono_next_boton.png');
+}
+
+/*Footer*/
 
 footer section {
     padding: 0;
@@ -762,6 +792,11 @@ footer{
         transform: translate(-400%, 230%); 
     }
 
+    .second-part-D{
+        padding-bottom: 0px;
+        margin-bottom: 5px;
+    }
+
     .second-part-B-text .button-shop-now{
         width: 100px;
         height: 32px;
@@ -803,6 +838,23 @@ footer{
         height: 5px;
         width: 5px;
         padding: 20px 20px; 
+    }
+
+    .third-part {
+        text-align: center;
+        display: block;
+        padding-top: 0px;
+    }
+    
+    .third-part-A{
+        margin-top: 5px;
+    }
+
+    /*third part*/
+    .third-part-B {
+        display: grid;
+        place-items: center; /* Centra los elementos tanto horizontal como verticalmente */
+        margin-top: 50px;
     }
 
     .footer-A{
