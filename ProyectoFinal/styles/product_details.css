@@ -70,6 +70,244 @@ header a:hover{
     border-bottom: 2px solid var(--menu-hover);
 }
 
+/*zero-part*/
+.button-home ul {
+    margin-top: 60px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.button-home button{
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    font-family: Cormorant Garamond;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--boton-color);
+}
+
+.button-home button:not(:last-child) {
+    margin-right: 20px; /* Puedes ajustar el espaciado entre los botones según tus preferencias */
+}
+
+.buy-part {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.buy-partA {
+    flex-basis: 40%; /* Ajusta el ancho de la columna A según tus necesidades */
+  }
+  
+.buy-partB {
+    flex-basis: 55%; /* Ajusta el ancho de la columna B según tus necesidades */
+  }
+
+.buy-partA{
+    display: flex;
+  }
+  
+.buy-partA ul {
+    flex: 1;
+    width: 10%;
+    background-color: transparent;
+    margin: 0;
+    padding: 10px 0px;
+}
+  
+.buy-partA span { 
+   position: relative;
+   display: inline-block;
+    flex: 4;
+    width: 90%;
+    background-color: transparent;
+    margin: 0;
+    padding: 10px 10px;
+  }
+
+.buy-partA .icono {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.buy-partA span .imgen{
+    width: 477px;
+    height: 636px;
+    top: 118px;
+    left: 206px;
+    border-radius: 8px;
+}
+  
+.buy-partA-imgbutton button{
+    width: 64px;
+    height: 82px;
+    top: 212px;
+    left: 132px;
+    border-radius: 4px;
+    border: none;
+    background-color: transparent;
+}
+
+.buy-partA-imgbutton button img{
+    width: 64px;
+    height: 82px;
+    top: 212px;
+    left: 132px;
+    border-radius: 4px;
+}
+
+/*+++++++++*/
+
+.buy-partB{
+    padding: 0 20px;
+}
+
+.buy-partB .title{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--boton-color);
+}
+
+.buy-partB .code{
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.buy-partB .price{
+    font-family: Manrope;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#B37D10;
+    margin-bottom: 5px;
+}
+
+.buy-partB .color{
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #424955;
+}
+
+.button-color button{
+    border-radius: 100%;
+    height: 36px;
+    width: 36px;
+    border: none;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.button-color button:hover{
+    border: 2px solid var(--boton-color);
+}
+
+.button-color .gray{
+    background-color: #DEE1E6;
+}
+
+.button-color .pink{
+    background-color:#E6AE87;
+}
+
+.buy-partB div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.buy-partB div .size{
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #424955;
+}
+
+.buy-partB div .what{
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #424955;
+    text-decoration: underline;
+}
+.buttons-size{
+    margin-bottom: 5px;
+}
+
+.buttons-size button{
+    width: 25px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 2px;
+    background-color: white;
+    border: 1px solid #565E6C;
+}
+
+.buttons-size button:hover{
+    border: 1px solid #8F640C;
+    color: #8F640C;
+}
+
+.quality{
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #424955;
+    margin-bottom: 10px;
+}
+
+.button-quantity button{
+    width: 30px;
+    height: 30px;
+    top: 466px;
+    left: 731px;
+    padding: 9px 0px 9px 0px;
+    border-radius: 4px;
+    background-color: #F3F4F6;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.button-buy button{
+
+}
 /*First part*/
 
 .first-part{
@@ -119,7 +357,6 @@ header a:hover{
     left: 72px;
     border-radius: 8px;
 }
-
 
 .first-part-play-button{
     position: absolute;
@@ -486,6 +723,26 @@ footer{
     header, section, footer {
         padding: 5px 50px;
     }
+    /*Zero-part*/
+    .buy-part {
+        display: block;
+    }
+
+    .buy-partA ul {
+        flex: 1;
+        width: 20%;
+    }
+      
+    .buy-partA span { 
+        flex: 4;
+        width: 80%;
+      }
+    
+    .buy-partA .icono {
+        position: absolute;
+        top: 15px;
+        right: 30px;
+    }
 
     /*Second part A*/
     .second-part-A .title{
@@ -559,6 +816,41 @@ footer{
         transform: translate(-50%, -50%);
         height: 7px;
         width: 7px;
+    }
+
+    /*zero patr*/
+    .buy-partA{
+        display: flex;
+      }
+      
+    .buy-partA ul {
+        flex: 1;
+        width: 10%;
+        margin: 0;
+        padding: 10px 0px;
+    }
+      
+    .buy-partA span { 
+       position: relative;
+       display: inline-block;
+        flex: 4;
+        width: 90%;
+        margin: 0;
+        padding: 10px 10px;
+      }
+    
+    .buy-partA .icono {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    
+    .buy-partA span .imgen{
+        width: 277px;
+        height: 536px;
+        top: 118px;
+        left: 206px;
+        border-radius: 8px;
     }
 
     /*Second part*/
