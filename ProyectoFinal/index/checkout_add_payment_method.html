@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product details</title>
+    <title>Checkout - Add payment method</title>
     <link rel="stylesheet" href="/ProyectoFinal/styles/checkout_add_payment_method.css">
 </head>
 <body>
@@ -22,6 +22,162 @@
             <a href=""><img src="/ProyectoFinal/img/icono_shopping.png" alt=""></a>
         </ul>
     </header>
+
+    <section class="checkout">
+
+        <article class="order-sumary">
+            <p class="title">Order summary</p>
+            
+            <table class="custom-table">
+                <tr>
+                  <td><img src="/ProyectoFinal/img/cc_c1_img1.png" alt="Imagen 1"></td>
+                  <td>
+                    <p class="title">Luxury Charms Ring</p>
+                    <p class="code">Code: 78205</p>
+                  </td>
+                  <td><td class="price">$620.73</td></td>
+                  <td class="icono"><img src="/ProyectoFinal/img/ca_icono_eliminar.png" alt="Imagen 2"></td>
+                </tr>
+                <tr>
+                  <td><img src="/ProyectoFinal/img/cc_c1_img2.png" alt="Imagen 3"></td>
+                  <td>
+                    <p class="title">Exquisite Earrings</p>
+                    <p class="code">Code: 92701</p>
+                  </td>
+                  <td><td class="price">$125.28</td></td>
+                  <td class="icono"><img src="/ProyectoFinal/img/ca_icono_eliminar.png" alt="Imagen 4"></td>
+                </tr>
+                <tr>
+                  <td><img src="/ProyectoFinal/img/cc_c1_img3.png" alt="Imagen 5"></td>
+                  <td>
+                    <p class="title">Delights Earrings</p>
+                    <p class="code">Code: 78201</p>
+                  </td>
+                  <td><td class="price">$327.71</td></td>
+                  <td class="icono"><img src="/ProyectoFinal/img/ca_icono_eliminar.png" alt="Imagen 6"></td>
+                </tr>
+              </table>
+
+        </article>
+
+        <article class="payment-method">
+            <p class="title">Payment method</p>
+            <p class="change"><a href=""></a>Change payment methods</a> </p>
+            <input type="text" class="input-with-image" placeholder="Mastercard          **** 5987" >
+            <p id="vaucher">Voucher</p>
+            <span id="apply">
+                <input type="text" placeholder="$15 OFF">
+                <button id="applyboton">Apply</button>
+            </span>
+            <p id="off">$15 OFF</p>
+            <p id="sumarytitle">Summary</p>
+            <span class="sumary">
+                <p class="text">Subtotal</p>
+                <p class="number">$1073.72</p>
+            </span>
+            <span class="sumary">
+                <p class="text">Discount</p>
+                <p class="number">-$15</p>
+            </span>
+            <span class="sumary">
+                <p class="text">Fee</p>
+                <p class="number">$0</p>
+            </span>
+            <span class="total">
+                <p class="text">Total</p>
+                <p class="number">$1058.72</p>
+            </span>
+            <a href="/ProyectoFinal/index/checkout_payment_success.html">
+                <button class="paymentboton">Proceed to payment</button>
+            </a>
+
+        </article>
+
+    </section>
+
+
+    <section class="second-part">
+
+        <article class="second-part-B">
+            <p class="titleA">You may also like</p>
+            <article class="second-part-B-img">
+                <div>
+                    <img src="/ProyectoFinal/img/ca_c2_img1.png" alt="">
+                    <p class="title">Radiance Necklace</p>
+                    <p class="text">$168.76</p>
+                </div>
+                <div>
+                    <img src="/ProyectoFinal/img/ca_c2_img2.png" alt="">
+                    <p class="title">Exquisite Earrings</p>
+                    <p class="text">$125.28</p>
+                </div>
+                <div>
+                    <img src="/ProyectoFinal/img/ca_c2_img3.png" alt="">
+                    <p class="title">Glamur Neeklace</p>
+                    <p class="text">$620.73</p>
+                </div>
+                <div>
+                    <img src="/ProyectoFinal/img/ca_c2_img4.png"" alt="">
+                    <p class="title">Delights Earrings</p>
+                    <p class="text">$327.71</p>
+                </div>
+                <div>
+                    <img src="/ProyectoFinal/img/ca_c2_img5.png" alt="">
+                    <p class="title">Dreamy Necklace</p>
+                    <p class="text">$327.71</p>
+                </div>
+                <div>
+                    <img src="/ProyectoFinal/img/ca_c2_img1.png" alt="">
+                    <p class="title">Delights Earrings</p>
+                    <p class="text">$327.71</p>
+                </div>
+            </article>
+        </article>
+
+    </section>
+
+
+    <footer>
+        <article class="footer-A">
+
+            <div class="columna">
+                <p class="title">Darling.</p>
+            </div>
+
+            <div class="columnaB">
+                <p>Shop</p>
+                <p>Collections</p>
+                <p>About</p>
+            </div>
+
+            <div class="columnaB">
+                <p>Contact</p>
+                <p>Privacy</p>
+                <p>Terms</p>
+            </div>
+
+            <div class="columna">
+                <p class="footer-subs-tittle">Subscribe to our newsletter</p>
+                <p class="footer-subs-text">For product announcements and exclusive insights</p>
+                <div class="email-input-container">
+                    <i class="far fa-envelope" aria-hidden="true"></i>
+                    <input type="email" class="correo-input" placeholder="Ingrese su correo">
+                </div>
+                <button>Subscribe</button>
+            </div>
+
+        </article>
+
+        <article class="footer-B">
+            <div>© 2022 Brand, Inc.</div>
+            <div class="redes-sociales">
+                <a href=""><img src="/ProyectoFinal/img/icono_twitter.png" alt=""></a>
+                <a href=""><img src="/ProyectoFinal/img/icono_facebook.png" alt=""></a>
+                <a href=""><img src="/ProyectoFinal/img/icono_linkedin.png" alt=""></a>
+                <a href=""><img src="/ProyectoFinal/img/icono_youtube.png" alt=""></a>
+            </div>
+        </article>
+    </footer>
     
 </body>
 </html>

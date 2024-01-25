@@ -40,7 +40,6 @@ header {
     display: flex;
     justify-content: space-between;
     height: 62px;
-
 }
 
 header .title{
@@ -70,10 +69,498 @@ header a:hover{
     border-bottom: 2px solid var(--menu-hover);
 }
 
+/*Checkout add*/
+.checkout {
+    display: flex;
+    margin-top: 15px 10px;
+}
+
+.order-sumary{
+    flex: 70%; 
+    padding: 5px;
+    border-radius: 4px;
+    margin-right: 20px;
+    box-shadow: 0px 0px 1px 0px #171A1F12;
+    box-shadow: 0px 0px 2px 0px #171A1F1F;
+
+}
+
+.payment-method{
+    flex: 35%;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 1px 0px #171A1F12;
+    box-shadow: 0px 0px 2px 0px #171A1F1F;
+}
+
+.checkout .title{
+    font-family: Cormorant Garamond;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.custom-table img{
+    padding-left: 20px;
+}
+
+.custom-table .title{
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.custom-table .code{
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #565E6C;
+    padding-left: 30px;
+}
+
+.custom-table .price{
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-left: 100px;
+}
+
+.custom-table  .icono{
+    width: 24px;
+    height: 24px;
+    top: 57.67px;
+    left: 47.94px;
+    padding-left: 60px;
+}
+
+/*pay method*/
+
+.change{
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    color: #379AE6;
+    margin: 20px 15px;
+}
+
+.input-with-image {
+    background-image: url('/ProyectoFinal/img/ca_icono_visa.png'); /* Ruta de la imagen */
+    background-size: 20px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    background-position: 10px center; /* Ajusta la posición de la imagen */
+    background-repeat: no-repeat;
+    padding: 10px 40px; 
+}
+
+.payment-method input{
+    margin-left: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #0D554A;
+    background-color: #F8F9FA;
+    color: #0D554A;
+}
+
+#vaucher{
+    margin-left: 15px;
+    margin-bottom: 20px;
+    font-family: Cormorant Garamond;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+#apply input{
+    height: 35px;
+    width: 180px;
+    top: 224px;
+    left: 24px;
+    border-radius: 4px;
+    border: 2px solid #9095A0;
+    background-color: white;
+    color: black;
+}
+
+#applyboton{
+    width: 50px;
+    height: 36px;
+    top: 224px;
+    left: 251px;
+    border-radius: 4px;
+    background-color: #F2C66D;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #6B4A09;
+    border: none;
+}
+
+#off{
+    margin-left: 10px;
+    margin-bottom: 40px;
+    width: 55px;
+    height: 28px;
+    top: 268px;
+    left: 24px;
+    width: 55px;
+    height: 28px;
+    padding: 4px 9px 4px 8px;
+    border-radius: 14px;
+    background-color: #FEF9EE;
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:#8F640C;
+}
+
+#sumarytitle{
+    margin-left: 15px;
+    margin-bottom: 8px;
+    font-family: Cormorant Garamond;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.sumary{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sumary .text{
+    margin-left: 15px;
+    margin-bottom: 5px;
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.sumary .number{
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: right;
+    font-weight: bold;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-top: 1px solid #F3F4F6;
+}
+
+.total .text{
+    margin-left: 15px;
+    margin-top: 5px;
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.total .number{
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #E8502E;
+}
+
+.paymentboton{
+    margin-top: 20px;
+    text-align: center;
+    width: 340px;
+    height: 44px;
+    top: 515px;
+    left: 24px;
+    padding: 9px 76px 9px 75px;
+    border-radius: 22px;
+    border: 1px solid var(--boton-color);
+    color: var(--boton-color);
+    background-color: transparent;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+}
+
+.paymentboton:hover{
+    border: none;
+    color: white;
+    background-color: var(--boton-color);
+}
+
+
+/*Second part A*/
+
+.second-part-B{
+    margin-right: -150px;
+}
+
+.second-part-B .titleA{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0D554A;
+    margin-bottom: 10px;
+}
+
+.second-part-B-img .title{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.second-part-B-img .text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.second-part-B-img{
+    top: 1101px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    width: auto;
+}
+
+.second-part-B-img div{
+    border: 1px solid gainsboro; 
+    margin: 0 10px;
+    text-align: center;
+    top: 48px;
+    border-radius: 8px;
+}
+
+.second-part-B-img img {
+    width: 260px;
+    height: 320px;
+    border-radius: 8px;   
+}
+
+
+/*Footer*/
+
+footer section {
+    padding: 0;
+}
+
+footer{
+    color: white;
+}
+
+.footer-A{
+    display: flex;
+    justify-content: space-around;
+}
+
+.columna .title{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #F5D38E;
+}
+
+.columnaB p{
+    font-family: var(--tipografia-text);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+}
+
+.footer-B{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-subs-tittle{
+    font-family: var(--tipografia-title);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.footer-subs-text{
+    font-family: var(--tipografia-menu);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.columna input{
+    width: 150px;
+    height: 22px;
+    top: 114px;
+    left: 900px;
+    padding: 7px 6px 6px 6px;
+    border-radius: 18px 0px 0px 18px;
+    border: 1px solid white;
+    font-family: var(--tipografia-menu);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    background-color: var(--boton-color);
+    color: white;
+}
+
+.columna button{
+    background-color: #F2C66D;
+    width: 114px;
+    height: 36px;
+    top: 114px;
+    left: 1190px;
+    padding: 7px 23.5px 7px 24.5px;
+    border-radius: 0px 18px 18px 0px;
+    font-family: var(--tipografia-menu);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.email-input-container{
+    position: relative;
+    display: inline-block;
+    
+}
+  
+.email-input-container i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+  
+.email-input-container input {
+    padding-left: 30px;
+    color: white;
+    background-color: var(--primary-color); 
+    border: 1px solid white;
+}
+
+.email-input-container input::placeholder {
+    color: white;
+}
+
+.correo-input {
+    color: white;
+}
+
+.redes-sociales img{
+    padding: 0 5px;
+    width: 30px;
+    height: 30px;
+    top: 3px;
+    left: 3px;
+}
+
+
 @media screen and (max-width: 890px){
     header, section, footer {
         padding: 5px 50px;
     }
+
+    /*checak out add*/
+    .checkout {
+        display: block;
+    }
+
+    .custom-table .price{
+        padding-left: 20px;
+    }
+    
+    .custom-table  .icono{
+        padding-left: 20px;
+    }
+
+     /*second part b*/ 
+        .second-part-B .titleA{
+            font-size: 30px;
+            line-height: 46px;
+            margin-bottom: 10px;
+        }
+    
+        .second-part-B{
+            width: 100%;
+        }
+    
+        .second-part-B-img{
+            width: 600px;
+            height: 300px;
+            padding: 0;
+            margin: 0;
+        }
+    
+        .second-part-B-img img {
+            width: 160px;
+            height: 220px;
+            border-radius: 8px; 
+            text-align: center;
+        }
+    
+        .second-part-B-img .title {
+            font-size: 14px;
+            line-height: 26px;
+        }
+    
+        .second-part-B-img .text {
+            font-size: 10px;
+            line-height: 16px;
+        }
     
 }
 
@@ -82,4 +569,60 @@ header a:hover{
         margin: 0;
         padding: 5px 5px;
     }
+
+    /*checkout add*/
+    .custom-table .price{
+        padding-left: 5px;
+    }
+    
+    .custom-table  .icono{
+        padding-left: 5px;
+    }
+
+     /*Second part B*/
+     .second-part-B-img img {
+        width: 100px;
+        height: 120px;
+        border-radius: 8px; 
+        margin-left: 5px;
+    }
+
+    .second-part-B-img{
+        width: 100%;
+        height: 200px;
+    }
+
+    .second-part-B-img .title {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .second-part-B-img .text {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+     /*Footer*/
+
+     .footer-A{
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .columna .title{
+        text-align: center;
+    }
+
+    .columnaB{
+        margin-bottom: 20px;
+    }
+
+    .footer-subs-tittle{
+        text-align: center;
+    }
+    
+    .footer-subs-text{
+        text-align: center;
+    } 
 }
