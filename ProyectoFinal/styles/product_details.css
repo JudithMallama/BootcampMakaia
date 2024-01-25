@@ -360,7 +360,8 @@ header a:hover{
     padding: 0;
     margin: 0;
     flex: 1;
-  }
+
+}
   
 .text-box  li {
     display: flex;
@@ -378,8 +379,171 @@ header a:hover{
   
 .text-box  span {
     margin-right: 1px;
-  }
+}
 
+/*Ventana emergente*/
+.popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 999; /* Asegura que la pantalla emergente esté siempre al frente */
+  }
+  
+.popup-content {
+    padding: 20px;
+}
+  
+.close-btn {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+  
+.close-btn:hover {
+    color: red;
+}
+
+.popup-content .title{
+    font-family: Cormorant Garamond;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--boton-color);   
+}
+
+.popup-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Establece la dirección del eje principal como columna */
+    align-items: flex-start; /* Alinea los elementos en el inicio del eje transversal */
+}
+  
+.vertical {
+    display: flex;
+    flex-direction: column; /* Establece la dirección del eje principal como columna */
+    align-items: flex-start; /* Alinea los elementos en el inicio del eje transversal */
+ }
+
+ .cc_img{
+    margin-top: 5px;
+    border-bottom: 1px solid #9095A0;
+ }
+
+.cc_img .imagen{
+    width: 94px;
+    height: 94px;
+    border-radius: 6px;
+}
+
+.cc_img .ver{
+    display: flex;
+    flex-direction: column; /* Establece la dirección del eje principal como columna */
+    align-items: flex-start;
+    margin-left: -150px;
+    justify-content: left;
+    margin-bottom: 20px;
+
+}
+
+.cc_img span {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cc_img span img{
+    width: 26px;
+    height: 26px;
+    padding: 7px 10px 7px 10px;
+    border-radius: 4px;
+    margin-left: 50px;   
+}
+
+.cc_img span p{
+    width: 150px;
+}
+
+.ver .code{
+    font-family: Manrope;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #9095A0;
+    margin-left: 5px;
+    margin-top: -30px;
+}
+
+.ver .price{
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: black;
+    margin-left: 5px;
+}
+
+.ver .x{
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 65px;
+}
+
+.cc_img .title{
+    margin-left: 5px;
+    font-family: Cormorant Garamond;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+}
+
+.cc_img .ver .total{
+    margin-top: 10px;
+}
+
+.cc_img .ver .total .total-text{
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.cc_img .ver .total .total-numer{
+    font-family: Cormorant Garamond;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: right;
+
+}
+
+.button-buy .continu{
+    margin-top: 10px;
+    width: 100%;
+}
 /*First part*/
 
 .first-part{
@@ -790,6 +954,9 @@ footer{
 }
 
 @media screen and (max-width: 1100px){
+    .popup{
+        width: 400px;
+    }
     .button-buy{
         display: block;
         justify-content: space-between;
@@ -803,6 +970,35 @@ footer{
     header, section, footer {
         padding: 5px 50px;
     }
+
+    .popup{
+        width: 60%;
+        
+    }
+    .cc_img .title
+    {
+        margin-left: 110px;
+    }
+    .ver .code {
+        margin-left: 110px;
+    }
+    .ver .price{
+        margin-left: 110px;
+    }
+    .cc_img .ver .total
+    {
+        margin-left: 110px;
+    }
+    .button-buy .continu{
+        margin-left: 110px;
+        width: 80%;
+    }
+
+    .button-buy .continu:hover{
+        margin-left: 110px;
+        width: 80%;
+    }
+    
     /*Zero-part*/
     .buy-part {
         display: block;
@@ -902,6 +1098,34 @@ footer{
         transform: translate(-50%, -50%);
         height: 7px;
         width: 7px;
+    }
+
+    .popup{
+        width: 100%;
+        
+    }
+    .cc_img .title
+    {
+        margin-left: 210px;
+    }
+    .ver .code {
+        margin-left: 210px;
+    }
+    .ver .price{
+        margin-left: 210px;
+    }
+    .cc_img .ver .total
+    {
+        margin-left: 210px;
+    }
+    .button-buy .continu{
+        margin-left: 210px;
+        width: 60%;
+    }
+
+    .button-buy .continu:hover{
+        margin-left: 210px;
+        width: 60%;
     }
 
     /*zero patr*/
