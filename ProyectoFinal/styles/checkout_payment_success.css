@@ -40,7 +40,6 @@ header {
     display: flex;
     justify-content: space-between;
     height: 62px;
-
 }
 
 header .title{
@@ -70,9 +69,347 @@ header a:hover{
     border-bottom: 2px solid var(--menu-hover);
 }
 
+/*secction payment*/
+.payment {
+    width: 45%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.data{
+    margin-top: 30px;
+    border: 1px solid #DEE1E6;
+    width: 100%;
+    padding-left: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 1px 0px #171A1F12;
+    box-shadow: 0px 0px 2px 0px #171A1F1F;
+}
+
+.payment .title{
+    margin: 15px 0px;
+    font-family: Cormorant Garamond;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+#receive{
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #9095A0;
+    margin-bottom: 4s0px;
+}
+
+.custom-table{
+    text-align: left;
+    border-bottom: 1px solid #DEE1E6;
+}
+
+.custom-table .text{
+    
+    padding-left: 15px;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #9095A0;
+    padding-bottom: 20px;
+}
+
+#date{
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: right;
+    padding-left: 300px;
+}
+
+#number{
+    font-family: Cormorant Garamond;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: right;
+    padding-left: 300px;
+}
+
+#visa{
+    text-align: right;
+    padding-left: 300px;
+}
+
+.payment-table{
+    text-align: left;
+    border-bottom: 1px solid #DEE1E6;
+}
+
+.payment-table .text{
+    padding-left: 15px;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #9095A0;
+    padding-bottom: 20px;
+}
+
+#order{
+    text-align: right;
+    padding-left: 300px;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+
+#total{
+    text-align: right;
+    padding-left: 300px;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+
+.buy .title{
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.table-container {
+    max-height: 200px; /* Ajusta la altura máxima según tus necesidades */
+    overflow-y: auto;
+    width: 100%;
+}
+
+.compras .title{
+    padding-left: 5px;
+    font-family: Cormorant Garamond;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.compras .code{
+    padding-left: 5px;
+    font-family: Manrope;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #9095A0;
+    margin-top: -15px;
+}
+
+.compras .quantity{
+    padding-left: 5px;
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: #F3F4F6;
+    width: 32px;
+    height: 28px;
+    padding: 4px 12px 4px 8px;
+    border-radius: 14px;
+}
+
+.compras .price{
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: right;
+    padding-left: 150px;
+}
+
+.buy button{
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-bottom: 40px;
+    width: 250px;
+    height: 44px;
+    top: 583px;
+    left: 193px;
+    padding: 9px 15px 9px 16px;
+    border-radius: 22px;
+    border: 1px solid var(--boton-color);
+    color: var(--boton-color);
+    background-color: transparent;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+}
+
+.buy button:hover{
+    border: none;
+    color: white;
+    background-color: var(--boton-color);
+}
+
+/*Footer*/
+
+footer section {
+    padding: 0;
+}
+
+footer{
+    color: white;
+}
+
+.footer-A{
+    display: flex;
+    justify-content: space-around;
+}
+
+.columna .title{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #F5D38E;
+}
+
+.columnaB p{
+    font-family: var(--tipografia-text);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+}
+
+.footer-B{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-subs-tittle{
+    font-family: var(--tipografia-title);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.footer-subs-text{
+    font-family: var(--tipografia-menu);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.columna input{
+    width: 150px;
+    height: 22px;
+    top: 114px;
+    left: 900px;
+    padding: 7px 6px 6px 6px;
+    border-radius: 18px 0px 0px 18px;
+    border: 1px solid white;
+    font-family: var(--tipografia-menu);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    background-color: var(--boton-color);
+    color: white;
+}
+
+.columna button{
+    background-color: #F2C66D;
+    width: 114px;
+    height: 36px;
+    top: 114px;
+    left: 1190px;
+    padding: 7px 23.5px 7px 24.5px;
+    border-radius: 0px 18px 18px 0px;
+    font-family: var(--tipografia-menu);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.email-input-container{
+    position: relative;
+    display: inline-block;
+    
+}
+  
+.email-input-container i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+  
+.email-input-container input {
+    padding-left: 30px;
+    color: white;
+    background-color: var(--primary-color); 
+    border: 1px solid white;
+}
+
+.email-input-container input::placeholder {
+    color: white;
+}
+
+.correo-input {
+    color: white;
+}
+
+.redes-sociales img{
+    padding: 0 5px;
+    width: 30px;
+    height: 30px;
+    top: 3px;
+    left: 3px;
+}
+
 @media screen and (max-width: 890px){
     header, section, footer {
-        padding: 5px 50px;
+        padding: 5px 5px;
+    }
+
+    .payment {
+        width: 60%;
+        margin: 5px auto;
+        text-align: center;
     }
     
 }
@@ -82,4 +419,27 @@ header a:hover{
         margin: 0;
         padding: 5px 5px;
     }
+     /*Footer*/
+
+     .footer-A{
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .columna .title{
+        text-align: center;
+    }
+
+    .columnaB{
+        margin-bottom: 20px;
+    }
+
+    .footer-subs-tittle{
+        text-align: center;
+    }
+    
+    .footer-subs-text{
+        text-align: center;
+    } 
 }
