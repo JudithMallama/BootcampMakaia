@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario-Teoria</title>
+</head>
+<body>
+    <header></header>
+    <!-- <section>
+        <div>
+            <p id="holamundo">Hola mundo</p>
+            <form id="myForm" onsubmit="submitForm(event)">
+                <input type="text" name="name" placeholder="Digite su nombre">
+                <br> <br>
+                <input type="email" name="email" value="vane@gmail.com" placeholder="Por favor ingrese su email">
+                <button type="submit">Enviar</button>
+                <br><br>
+                <button type="button" onclick="alert('Me clicleaste')">haz click</button>
+            </form>
+        </div>
+    </section> -->
+    
+    <form  id="ejercicio1" onsubmit="agregarUsuario(event)">
+        <input type="text" placeholder="nombre" name="nombre"> <br><br>
+        <input type="text" placeholder="apellido" name="apellido"><br><br>
+        <input type="number" placeholder="telefono" name="telefono"><br><br>
+        <fieldset>
+            <legend>Por favor seleccione su genero:</legend>
+            <div>
+                <input type="radio" id="contactChoice1" name="genero" value="hombre">
+                <label for="generoChoice1">Hombre</label>
+
+                <input type="radio" id="generoChoice2" name="genero" value="mujer">
+                <label for="generoChoice2">Mujer</label>
+
+                <input type="radio" id="generoChoice3" name="genero" value="Otros">
+                <label for="generoChoice2">Mujer</label>
+            </div>
+        </fieldset>
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="./formulario.js"></script> 
+
+    
+</body>
+</html>
