@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>ToDo List </title>
+</head>
+<body>
+    <form id="agregarTarea" onsubmit="recibirForm(event)">
+        <input name="tarea" placeholder="Por favor ingrese la tarea" type="text">
+        <select name="estado" id="">
+            <option value="pendiente">Pendiente</option>
+            <option value="ejecutando">Ejecutando</option>
+            <option value="finalizado">Finalizado</option>
+        </select>
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <div>
+        <select name="filtro" onchange="filtrarTareas(event)">
+            <option value="pendiente">Pendiente</option>
+            <option value="ejecutando">Ejecutando</option>
+            <option value="finalizado">Finalizado</option>
+            <option value="todos">todos</option>
+        </select>
+    </div>
+    <section id="listaTareas" class="contenedorTareas"></section>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>

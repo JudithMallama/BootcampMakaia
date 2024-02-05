@@ -1,0 +1,45 @@
+
+
+#agregarTarea{
+    width: 100%;
+    text-align: center;
+}
+
+#agregarTarea input{
+    padding: 8px;
+    border-radius: 15px;
+    border: 1px solid lightgrey;
+}
+
+#agregarTarea select{
+    padding: 8px;
+    border-radius: 15px;
+    border: 1px solid lightgrey;
+}
+
+#agregarTarea button{
+    padding: 8px;
+    border-radius: 15px;
+    border: 1px solid lightgrey;
+    background-color: coral;
+    color: white;
+}
+
+.contenedorTareas{
+    width: 60%;
+    margin: auto;
+    background-color: blueviolet;
+    border-radius: 15px;
+    height: auto;
+    margin-top: 50px;
+    padding: 20px;
+    color: aliceblue;
+}
+
+.listaItem{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
