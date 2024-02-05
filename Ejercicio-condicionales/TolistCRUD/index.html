@@ -17,6 +17,14 @@
         <br><br>
         <button type="submit">Enviar</button>
     </form>
+    <div>
+        <select name="filtro" onchange="filtrarTareas(event)">
+            <option value="pendiente">Pendiente</option>
+            <option value="ejecutando">Ejecutando</option>
+            <option value="finalizado">Finalizado</option>
+            <option value="todos">todos</option>
+        </select>
+    </div>
     <section id="listaTareas" class="contenedorTareas"></section>
 
     <script src="./script.js"></script>

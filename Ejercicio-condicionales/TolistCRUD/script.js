@@ -5,8 +5,8 @@
 alert("Ejercicio de list")
 
 // array de tareas
-const listaDeTareas = []
-const tareasFiltradas = []
+let listaDeTareas = []
+let tareasFiltradas = []
 
 const editarEstado = (e, indice, estado) => {
     e.preventDefault()
@@ -81,13 +81,23 @@ const cambiarEstadoPorPosicion = (posicion, estado) => {
 }
 
 //declaracion de la funcion de filtrar tareas por estado
-const filtrarTareas = (estado) => {
+const filtrarTareas = (e) => {
+    //tareasFiltradas =listaDeTareas
+    let estado = e.target.value
+    if(estado==="todos"){
+        listaDeTareas = tareasFiltradas
+        listaDeTareas()
+        return
+    }
     const tareasFiltradas = listaDeTareas.filter(item => item.estado === estado)
-    return tareasFiltradas
+    listaDeTareas = tareasFiltradas
+    console.log("Lista de tareas", listaDeTareas);
+    listarTareas()
 }
 
 //declaracion de la funcion para eliminar tareas
 const eliminarTareaPorPosicion = (posicion) => {
+    console.log("estado", e.target.value);
     listaDeTareas.splice(posicion, 1)
     listarTareas()
 }
