@@ -1,32 +1,4 @@
-alert("Conexion al index")
-
-//Funcion por lista de porductos
-function filtrarPorTipo(listaProductos, tipoAccesorio) {
-    return listaProductos.filter(producto => producto.tipoAccesorio === tipoAccesorio);
-}
-
-//Funcion buscar por nombre
-function buscarPorNombre(listaProductos, terminoBusqueda) {
-    return listaProductos.filter(producto => producto.nombre.toLowerCase().includes(terminoBusqueda.toLowerCase()));
-}
-
-//Funcion orden por precio
-function ordenarPorPrecio(listaProductos, ascendente = true) {
-    const copiaLista = [...listaProductos]; // Copia para no modificar la lista original
-
-    copiaLista.sort((productoA, productoB) => {
-        const precioA = productoA.precioUnitario;
-        const precioB = productoB.precioUnitario;
-
-        if (ascendente) {
-            return precioA - precioB; // Orden ascendente
-        } else {
-            return precioB - precioA; // Orden descendente
-        }
-    });
-
-    return copiaLista;
-}
+//alert("Se conecto a la lista de productos");
 
 
 const listaProductos = [
@@ -737,40 +709,4 @@ const listaProductos = [
 
 ]
 
-//Funcion por lista de producto
-const productosFiltrados = filtrarPorTipo(listaProductos, "Collar");
-console.log("Productos filtrados por tipo de accesorio 'Collar':", productosFiltrados);
-
-//Funcion por nombre
-const resultadoBusqueda = buscarPorNombre(listaProductos, "Necklace");
-console.log("Productos encontrados por nombre 'Necklace':", resultadoBusqueda);
-
-//Funcion orden de precio
-const productosOrdenadosAscendente = ordenarPorPrecio(listaProductos, true);
-console.log("Productos ordenados por precio de manera ascendente:", productosOrdenadosAscendente);
-
-// Llamada a la función para ordenar por precio de manera descendente
-const productosOrdenadosDescendente = ordenarPorPrecio(listaProductos, false);
-console.log("Productos ordenados por precio de manera ascendente:", productosOrdenadosDescendente);
-
-//Funcion de compra
-function calcularTotalCompra(listaProductos) {
-    // Utilizamos el método reduce para sumar la cantidad por el precio de cada producto
-    const total = listaProductos.reduce((acumulador, producto) => {
-        return acumulador + (producto.cantidad * producto.precioUnitario);
-    }, 0); // El segundo parámetro de reduce es el valor inicial del acumulador, en este caso, 0
-
-    return total;
-}
-
-// Datos de prueba
-const productosCompra = [
-    { cantidad: 2, precioUnitario: 25.99 },
-    { cantidad: 1, precioUnitario: 39.99 },
-    { cantidad: 3, precioUnitario: 15.5 }
-];
-
-// Llamada a la función y mostrar el resultado en la consola del navegador
-const totalPagar = calcularTotalCompra(productosCompra);
-console.log("Total a pagar:", totalPagar);
-
+export default listaProductos;
