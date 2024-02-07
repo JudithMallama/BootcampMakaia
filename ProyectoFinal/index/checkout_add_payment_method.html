@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout - Add payment method</title>
     <link rel="stylesheet" href="/ProyectoFinal/styles/checkout_add_payment_method.css">
 </head>
+
 <body>
 
     <header>
@@ -27,72 +29,79 @@
 
         <article class="order-sumary">
             <p class="title">Order summary</p>
-            
+
             <table class="custom-table">
                 <tr>
-                  <td><img src="/ProyectoFinal/img/cc_c1_img1.png" alt="Imagen 1"></td>
-                  <td>
-                    <p class="title">Luxury Charms Ring</p>
-                    <p class="code">Code: 78205</p>
-                  </td>
-                  <td><td class="price">$620.73</td></td>
-                  <td class="icono"><img src="/ProyectoFinal/img/ca_icono_eliminar.png" alt="Imagen 2"></td>
+                    <td><img src="/ProyectoFinal/img/cc_c1_img1.png" alt="Imagen 1"></td>
+                    <td>
+                        <p class="title">Luxury Charms Ring</p>
+                        <p class="code">Code: 78205</p>
+                    </td>
+                    <td>
+                    <td class="price">$620.73</td>
+                    </td>
+                    <td class="icono"><img src="/ProyectoFinal/img/ca_icono_eliminar.png" alt="Imagen 2"></td>
                 </tr>
                 <tr>
-                  <td><img src="/ProyectoFinal/img/cc_c1_img2.png" alt="Imagen 3"></td>
-                  <td>
-                    <p class="title">Exquisite Earrings</p>
-                    <p class="code">Code: 92701</p>
-                  </td>
-                  <td><td class="price">$125.28</td></td>
-                  <td class="icono"><img src="/ProyectoFinal/img/ca_icono_eliminar.png" alt="Imagen 4"></td>
+                    <td><img src="/ProyectoFinal/img/cc_c1_img2.png" alt="Imagen 3"></td>
+                    <td>
+                        <p class="title">Exquisite Earrings</p>
+                        <p class="code">Code: 92701</p>
+                    </td>
+                    <td>
+                    <td class="price">$125.28</td>
+                    </td>
+                    <td class="icono"><img src="/ProyectoFinal/img/ca_icono_eliminar.png" alt="Imagen 4"></td>
                 </tr>
                 <tr>
-                  <td><img src="/ProyectoFinal/img/cc_c1_img3.png" alt="Imagen 5"></td>
-                  <td>
-                    <p class="title">Delights Earrings</p>
-                    <p class="code">Code: 78201</p>
-                  </td>
-                  <td><td class="price">$327.71</td></td>
-                  <td class="icono"><img src="/ProyectoFinal/img/ca_icono_eliminar.png" alt="Imagen 6"></td>
+                    <td><img src="/ProyectoFinal/img/cc_c1_img3.png" alt="Imagen 5"></td>
+                    <td>
+                        <p class="title">Delights Earrings</p>
+                        <p class="code">Code: 78201</p>
+                    </td>
+                    <td>
+                    <td class="price">$327.71</td>
+                    </td>
+                    <td class="icono"><img src="/ProyectoFinal/img/ca_icono_eliminar.png" alt="Imagen 6"></td>
                 </tr>
-              </table>
+            </table>
 
         </article>
 
         <article class="payment-method">
-            <p class="title">Payment method</p>
-            <p class="change"><a href=""></a>Change payment methods</a> </p>
-            <input type="text" class="input-with-image" placeholder="Mastercard          **** 5987" >
-            <p id="vaucher">Voucher</p>
-            <span id="apply">
-                <input type="text" placeholder="$15 OFF">
-                <button id="applyboton">Apply</button>
-            </span>
-            <p id="off">$15 OFF</p>
-            <p id="sumarytitle">Summary</p>
-            <span class="sumary">
-                <p class="text">Subtotal</p>
-                <p class="number">$1073.72</p>
-            </span>
-            <span class="sumary">
-                <p class="text">Discount</p>
-                <p class="number">-$15</p>
-            </span>
-            <span class="sumary">
-                <p class="text">Fee</p>
-                <p class="number">$0</p>
-            </span>
-            <span class="total">
-                <p class="text">Total</p>
-                <p class="number">$1058.72</p>
-            </span>
-            <a href="/ProyectoFinal/index/checkout_payment_success.html">
-                <button class="paymentboton">Proceed to payment</button>
-            </a>
+            <form id="formDatos">
+                <p class="title">Payment method</p>
+                <p class="change"><a href=""></a>Change payment methods</a> </p>
+                <input id="numero" name="numero" type="number" class="input-with-image" placeholder="Mastercard          **** 5987">
+                <p id="vaucher">Voucher</p>
+                <span id="apply">
+                    <input id="descuento" name="descuento" type="number" placeholder="$15 OFF">
+                    <button id="applyboton">Apply</button>
+                </span>
+                <p id="off">$15 OFF</p>
+                <p id="sumarytitle">Summary</p>
+                <span class="sumary">
+                    <p class="text">Subtotal</p>
+                    <p class="number" name="subtotal" id="subtotal">$1073.72</p>
+                </span>
+                <span class="sumary">
+                    <p class="text">Discount</p>
+                    <p class="number" id="discount" name="discount">-$15</p>
+                </span>
+                <span class="sumary">
+                    <p class="text">Fee</p>
+                    <p class="number" id="fee" name="fee" >$0</p>
+                </span>
+                <span class="total">
+                    <p class="text">Total</p>
+                    <p class="number" id="total" name="total">$1058.72</p>
+                </span>
+                <a href="/ProyectoFinal/index/checkout_payment_success.html">
+                    <button id="capturarDatos" type="submit" class="paymentboton">Proceed to payment</button>
+                </a>
+            </form>
 
         </article>
-
     </section>
 
 
@@ -118,7 +127,7 @@
                 </div>
                 <div>
                     <img src="/ProyectoFinal/img/ca_c2_img4.png"" alt="">
-                    <p class="title">Delights Earrings</p>
+                    <p class=" title">Delights Earrings</p>
                     <p class="text">$327.71</p>
                 </div>
                 <div>
@@ -178,6 +187,8 @@
             </div>
         </article>
     </footer>
-    
+
+    <script type="module" src="../javascript/checkout_add_payment_method.js"></script>
 </body>
+
 </html>
