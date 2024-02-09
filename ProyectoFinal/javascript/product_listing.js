@@ -1,53 +1,75 @@
 alert("Me concete al product listing");
 
-import listaProductos from '../javascript/listProducts.js';
+import listaProductos from "../javascript/listProducts.js";
 
-//Funcion filtrar producto por tipo
 const filtroBotones = document.querySelectorAll('[name="filtro"] button');
 
-// Obtener referencia al campo de entrada de búsqueda por nombre
-const inputFiltroNombre = document.getElementById('filtroNombre');
+const inputFiltroNombre = document.getElementById("filtroNombre");
+
+const priceSelect = document.getElementById("filtroPrecio");
+
+
 
 const filtrarProductos = (tipoAccesorio) => {
-    const productosFiltrados = listaProductos.filter(item => {
-        if (tipoAccesorio === 'todos') {
-            return true;
-        } else {
-            return item.tipoAccesorio === tipoAccesorio;
-        }
-    });
-    console.log("Lista de productos filtrados:", productosFiltrados);
+  const productosFiltrados = listaProductos.filter((item) => {
+    if (tipoAccesorio === "todos") {
+      return true;
+    } else {
+      return item.tipoAccesorio === tipoAccesorio;
+    }
+  });
+  console.log("Lista de productos filtrados:", productosFiltrados);
+  return productosFiltrados;
 };
 
-// Agregar un evento de clic a cada botón de filtro
-filtroBotones.forEach(boton => {
-    boton.addEventListener('click', () => {
-        const tipoAccesorio = boton.value;
-        filtrarProductos(tipoAccesorio);
-    });
+
+filtroBotones.forEach((boton) => {
+  boton.addEventListener("click", () => {
+    const tipoAccesorio = boton.value;
+    filtrarProductos(tipoAccesorio);
+  });
 });
 
 const filtrarPorNombre = () => {
-
-    const textoFiltro = inputFiltroNombre.value.toLowerCase();
-
-    // Filtrar la lista de productos por el texto ingresado
-    const productosFiltrados = listaProductos.filter(listaProductos => {
-        // Convertir el nombre del producto a minúsculas para hacer la comparación
-        const nombreProducto = listaProductos.nombre.toLowerCase();
-        const codigoProducto = listaProductos.codigo.toLowerCase();
-        // Verificar si el nombre del producto incluye el texto de filtro
-        return nombreProducto.includes(textoFiltro) || codigoProducto.includes(textoFiltro);
-    });
-    console.log("producto filtrado:", productosFiltrados);
+  const textoFiltro = inputFiltroNombre.value.toLowerCase();
+  const productosFiltrados = listaProductos.filter((listaProductos) => {
+    const nombreProducto = listaProductos.nombre.toLowerCase();
+    const codigoProducto = listaProductos.codigo.toLowerCase();
+    return (
+      nombreProducto.includes(textoFiltro) ||
+      codigoProducto.includes(textoFiltro)
+    );
+  });
+  console.log("producto filtrado:", productosFiltrados);
 };
 
-// Agregar un evento de cambio al campo de entrada para detectar cambios en el texto ingresado
-inputFiltroNombre.addEventListener('input', filtrarPorNombre);
+inputFiltroNombre.addEventListener("input", filtrarPorNombre);
 
+// Función para ordenar los productos por precio
+const ordenarProductosPorPrecio = (event) => {
+  const opcionSeleccionada = event.target.value;
 
+  let productosOrdenado = [];
 
+  switch (opcionSeleccionada) {
+    case "menor":
+        productosOrdenado = listaProductos.slice().sort((a, b) => Number(a.precioUnitario) - Number(b.precioUnitario));
+      break;
+    case "mayor":
+        productosOrdenado = listaProductos.slice().sort((a, b) => Number(b.precioUnitario) - Number(a.precioUnitario));
+      break;
+    case "todos":
+      productosOrdenado = listaProductos;
+      break;
+    default:
+      console.log("Soy tu joyeria de confiaza");
+      break;
+  }
 
+  console.log("Lista de prodcutos ordenados",productosOrdenado);
+  return productosOrdenado
+  //Ejecutarse la función de pintan las cards
+}
 
-
+priceSelect.addEventListener("change", ordenarProductosPorPrecio);
 
