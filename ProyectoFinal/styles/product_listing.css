@@ -74,6 +74,30 @@ footer section {
     padding: 0;
 }
 
+
+.modalCart{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(71, 69, 62, 0.498);
+    z-index: 9999;
+    visibility: hidden;
+}
+
+.show{
+    visibility: visible !important;
+}
+
+.modalCart section{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+
 .first-part{
     background-image: url('/ProyectoFinal/img/VectorFondo.png');
     text-align: center;
@@ -243,6 +267,14 @@ section .third-part-imgA{
     height: 404px;
 }
 
+.third-part-imgA div img{
+    border: 1px solid gainsboro; 
+ ;
+    border-radius: 8px;
+    width: 276px;
+    height: 320px;
+}
+
 .fourth-part-A{
     margin-left: 40px;
 }
@@ -279,6 +311,15 @@ section .third-part-imgA{
     border: 1px solid gainsboro; 
     border-radius: 8px;
 }
+
+
+.fourth-part-A div img {
+    width: 576px;
+    height: 826px;
+    justify-content: center;
+    border-radius: 8px;
+}
+
 
 .fourth-part .title{
     font-size: 24px;
@@ -524,7 +565,7 @@ footer{
         place-items: center;
         height: 40vh;
     }
-
+    
     .search-input input {
         width: 500px
     }
@@ -550,10 +591,11 @@ footer{
         flex-wrap: wrap; 
     }
 
-    .fourth-part-A div img{
+    .fourth-part-A div img {
         width: 178px;
+        height: 220px;
     }
-
+    
     .fourth-part-B div img{
         width: 178px;
     }

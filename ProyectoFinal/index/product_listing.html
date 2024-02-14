@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
-
     <header>
         <div class="title">
             <h1>Darling.</h1>
@@ -21,7 +20,7 @@
             <a href="">About</a>
             <a href="">Contact</a>
             <a href=""><img src="/ProyectoFinal/img/icono_perfil.png" alt=""></a>
-            <a href=""><img src="/ProyectoFinal/img/icono_shopping.png" alt=""></a>
+            <a href=""><img id="btnCart"  src="/ProyectoFinal/img/icono_shopping.png" alt=""></a>
         </ul>
     </header>
 
@@ -39,7 +38,7 @@
             <ul name="filtro" onchange="filtrarProductos(event)" >
                 <button value="todos">All</button>
                 <button value="Anillo">Rings</button>
-                <button value="brazalete">Bracelets</button>
+                <button value="Brazalete">Bracelets</button>
                 <button value="Collar">Necklaces</button>
                 <button value="Pendientes">Earrings</button>
             </ul>
@@ -56,58 +55,58 @@
         </div>
    </section>
 
-   <article  id="productosFiltrados" class="third-part-imgA">
-        <div>
-            <a href="/ProyectoFinal/index/product_details.html">
+   <article id="productosFiltrados" class="third-part-imgA" data-click="productCard">
+        <div data-click=productCard>
+            <a href="">
                 <img src="/ProyectoFinal/img/pl_c2_img1.png" alt="">
             </a>
             <p class="title">Luxury Gems Necklace</p>
             <p class="text">$168.76</p>
         </div>
-        <div>
-            <a href="/ProyectoFinal/index/product_details.html">
+        <div data-click=productCard>
+            <a href="">
                 <img src="/ProyectoFinal/img/pl_c2_img2.png" alt="">
             </a>
             <p class="title">Aurora Ring</p>
             <p class="text">$125.28</p>
         </div>
-        <div>
-            <a href="/ProyectoFinal/index/product_details.html">
+        <div data-click=productCard>
+            <a href="">
                 <img src="/ProyectoFinal/img/pl_c2_img3.png" alt="">
             </a>
             <p class="title">Reflections Necklace</p>
             <p class="text">$620.73</p>
         </div>
-        <div>
-            <a href="/ProyectoFinal/index/product_details.html">
+        <div data-click=productCard>
+            <a href="">
                 <img src="/ProyectoFinal/img/pl_c2_img4.png" alt="">
             </a>
             <p class="title">Dreamy Infinity Ring</p>
             <p class="text">$327.71</p>
         </div>
-        <div>
-            <a href="/ProyectoFinal/index/product_details.html">
+        <div data-click=productCard>
+            <a href="">
                 <img src="/ProyectoFinal/img/pl_c2_img5.png" alt="">
             </a>
             <p class="title">Opulent Jewels Ring</p>
             <p class="text">$168.76</p>
         </div>
-        <div>
-            <a href="/ProyectoFinal/index/product_details.html">
+        <div data-click=productCard>
+            <a href="">
                 <img src="/ProyectoFinal/img/pl_c2_img6.png" alt="">
             </a>
             <p class="title">Serene Solitaire Earrings</p>
             <p class="text">$125.28</p>
         </div>
-        <div>
-            <a href="/ProyectoFinal/index/product_details.html">
+        <div data-click=productCard>
+            <a href="">
                 <img src="/ProyectoFinal/img/pl_c2_img7.png" alt="">
             </a>
             <p class="title">Timeless Halo Earrings</p>
             <p class="text">$620.73</p>
         </div>
-        <div>
-            <a href="/ProyectoFinal/index/product_details.html">
+        <div data-click=productCard>
+            <a href="">
                 <img src="/ProyectoFinal/img/pl_c2_img8.png" alt="">
             </a>
             <p class="title">Exquisite Earrings</p>
@@ -115,10 +114,10 @@
         </div>
    </article>
     
-    <article class="fourth-part">
+    <article id="productosFiltradosB" class="fourth-part" data-click="productCard">
 
         <span class="fourth-part-A">
-            <div>
+            <div data-click=productCard>
                 <a href="/ProyectoFinal/index/product_details.html">
                     <img src="/ProyectoFinal/img/pl_c3_img1.png" alt="">
                 </a>
@@ -128,28 +127,28 @@
         </span>
 
         <span class="fourth-part-B">
-            <div>
+            <div data-click=productCard>
                 <a href="/ProyectoFinal/index/product_details.html">
                     <img src="/ProyectoFinal/img/pl_c3_img2.png" alt="">
                 </a>
                 <p class="title">Luxury Charms Ring</p>
                 <p class="text">$620.73</p>
             </div>
-            <div>
+            <div data-click=productCard>
                 <a href="/ProyectoFinal/index/product_details.html">
                     <img src="/ProyectoFinal/img/pl_c3_img3.png" alt="">
                 </a>
                 <p class="title">Blissful Bloom Ring</p>
                 <p class="text">$620.73</p>
             </div>
-            <div>
+            <div data-click=productCard>
                 <a href="/ProyectoFinal/index/product_details.html">
                     <img src="/ProyectoFinal/img/pl_c3_img4.png" alt="">
                 </a>
                 <p class="title">Sparkling Ring </p>
                 <p class="text">$620.73</p>
             </div>
-            <div>
+            <div data-click=productCard>
                 <a href="/ProyectoFinal/index/product_details.html">
                     <img src="/ProyectoFinal/img/pl_c3_img5.png" alt="">
                 </a>
@@ -233,8 +232,17 @@
             </div>
         </article>
     </footer>
+
+    <div class="modalCart hidden">
+        <section>
+            <button id="closeModal">X</button>
+            <span>Contenido del Modal</span>
+        </section>
+    </div>
+    
     <script type="module" src="../javascript/listProducts.js"></script>
     <script type="module" src="../javascript/product_listing.js"></script>
+    <script type="module" src="../javascript/modalCart.js"></script>
     
     
 </body>

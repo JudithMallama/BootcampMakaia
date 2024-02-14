@@ -19,6 +19,7 @@ const filtrarProductos = (tipoAccesorio) => {
     }
   });
   console.log("Lista de productos filtrados:", productosFiltrados);
+  insertarProductosA(contenedorProductos, productosFiltrados);
   return productosFiltrados;
 };
 
@@ -40,6 +41,7 @@ const filtrarPorNombre = () => {
       codigoProducto.includes(textoFiltro)
     );
   });
+  insertarProductosA(contenedorProductos, productosFiltrados);
   console.log("producto filtrado:", productosFiltrados);
 };
 
@@ -53,23 +55,68 @@ const ordenarProductosPorPrecio = (event) => {
 
   switch (opcionSeleccionada) {
     case "menor":
-        productosOrdenado = listaProductos.slice().sort((a, b) => Number(a.precioUnitario) - Number(b.precioUnitario));
+      productosOrdenado = listaProductos.slice().sort((a, b) => Number(a.precioUnitario) - Number(b.precioUnitario));
+      insertarProductosA(contenedorProductos, productosOrdenado);
       break;
     case "mayor":
-        productosOrdenado = listaProductos.slice().sort((a, b) => Number(b.precioUnitario) - Number(a.precioUnitario));
+      productosOrdenado = listaProductos.slice().sort((a, b) => Number(b.precioUnitario) - Number(a.precioUnitario));
+      insertarProductosA(contenedorProductos, productosOrdenado);
       break;
     case "todos":
       productosOrdenado = listaProductos;
+      insertarProductosA(contenedorProductos, productosOrdenado);
       break;
     default:
       console.log("Soy tu joyeria de confiaza");
       break;
   }
 
-  console.log("Lista de prodcutos ordenados",productosOrdenado);
+  console.log("Lista de prodcutos ordenados", productosOrdenado);
   return productosOrdenado
   //Ejecutarse la función de pintan las cards
 }
 
 priceSelect.addEventListener("change", ordenarProductosPorPrecio);
 
+//Imprimir los primeros 8 productos
+const contenedorProductos = document.getElementById("productosFiltrados")
+console.log(contenedorProductos)
+const contenedorProductosB = document.getElementById("productosFiltradosB")
+console.log(contenedorProductosB);
+
+
+const insertarProductosA = (contenedor, listaProductos) => {
+  contenedor.innerHTML = "";
+  listaProductos.forEach(producto => {
+    console.log("pr", producto.id);
+    contenedor.innerHTML += `
+        <article name=${producto.id} id="productosFiltrados" class="third-part-imgA"}>
+        <div data-click=productCard>
+            <a href="">
+                <img src= ${producto.imagenes[0]} alt=${producto.nombre}}>     
+            </a>
+            <p class="title">${producto.nombre}</p>
+            <p  class="text">$${producto.precioUnitario}</p>
+        </div>
+        `;
+
+  });
+}
+
+
+
+const goToDetails = () => {
+  const cards = document.querySelectorAll(".third-part-imgA");
+  console.log("Es este", cards)
+
+  cards.forEach(card => {
+    card.addEventListener("click", (event) => {
+      event.preventDefault();
+      console.log("hice click", card.getAttribute("name"));
+
+      // location.href = "/ProyectoFinal/index/product_details.html";
+    })
+  })
+}
+
+goToDetails();

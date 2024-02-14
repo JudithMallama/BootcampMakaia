@@ -19,7 +19,7 @@
             <a href="">About</a>
             <a href="">Contact</a>
             <a href=""><img src="/ProyectoFinal/img/icono_perfil.png" alt=""></a>
-            <a href=""><img src="/ProyectoFinal/img/icono_shopping.png" alt=""></a>
+            <a href=""><img id="btnCart"  src="/ProyectoFinal/img/icono_shopping.png" alt=""></a>
         </ul>
     </header>
 
@@ -116,5 +116,13 @@
           <script src="/ProyectoFinal/javascript/checkout_cart.js"></script>
     </section>
     
+    <div class="modalCart hidden">
+        <section>
+            <button id="closeModal">X</button>
+            <span>Contenido del Modal</span>
+        </section>
+    </div>
+    
+    <script type="module" src="../javascript/modalCart.js"></script>
 </body>
 </html>
