@@ -21,7 +21,7 @@
             <a href="">About</a>
             <a href="">Contact</a>
             <a href=""><img src="/ProyectoFinal/img/icono_perfil.png" alt=""></a>
-            <a href=""><img src="/ProyectoFinal/img/icono_shopping.png" alt=""></a>
+            <a href=""><img id="btnCart" src="/ProyectoFinal/img/icono_shopping.png" alt=""></a>
         </ul>
     </header>
 
@@ -96,8 +96,8 @@
                     <p class="text">Total</p>
                     <p class="number" id="total" name="total">$1058.72</p>
                 </span>
-                <a href="/ProyectoFinal/index/checkout_payment_success.html">
-                    <button id="capturarDatos" type="submit" class="paymentboton">Proceed to payment</button>
+                <a href="./checkout_payment_success.html">
+                    <button id="capturarDatos" type="submit" class="paymentboton"><a href="./checkout_payment_success.html">Proceed to payment</button>
                 </a>
             </form>
 
@@ -187,8 +187,16 @@
             </div>
         </article>
     </footer>
+    
+    <div class="modalCart hidden">
+        <section>
+            <button id="closeModal">X</button>
+            <span>Contenido del Modal</span>
+        </section>
+    </div>
 
     <script type="module" src="../javascript/checkout_add_payment_method.js"></script>
+    <script type="module" src="../javascript/modalCart.js"></script>
 </body>
 
 </html>
