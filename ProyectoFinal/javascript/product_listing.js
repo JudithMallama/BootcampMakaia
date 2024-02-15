@@ -90,7 +90,7 @@ const insertarProductosA = (contenedor, listaProductos) => {
   listaProductos.forEach(producto => {
     console.log("pr", producto.id);
     contenedor.innerHTML += `
-        <article name=${producto.id} id="productosFiltrados" class="third-part-imgA"}>
+    <article name=${producto.id} id="productosFiltrados" class="third-part-imgA"}>
         <div data-click=productCard>
             <a href="">
                 <img src= ${producto.imagenes[0]} alt=${producto.nombre}}>     
@@ -106,17 +106,20 @@ const insertarProductosA = (contenedor, listaProductos) => {
 
 
 const goToDetails = () => {
-  const cards = document.querySelectorAll(".third-part-imgA");
+  const cards = document.querySelectorAll("third-part-imgA");
   console.log("Es este", cards)
 
-  cards.forEach(card => {
-    card.addEventListener("click", (event) => {
-      event.preventDefault();
-      console.log("hice click", card.getAttribute("name"));
-
-      // location.href = "/ProyectoFinal/index/product_details.html";
+  cards.forEach((card) => {
+    //event.preventDefault();
+    card.addEventListener("click", () => {
+      console.log("card", card.getAttribute("name"));
     })
   })
 }
+//event.preventDefault();
 
-goToDetails();
+
+// location.href = "/ProyectoFinal/index/product_details.html";
+
+
+goToDetails()
