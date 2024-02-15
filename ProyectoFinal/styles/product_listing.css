@@ -265,11 +265,11 @@ section .third-part-imgA{
     border-radius: 8px;
     width: 276px;
     height: 404px;
+    cursor: pointer;
 }
 
 .third-part-imgA div img{
     border: 1px solid gainsboro; 
- ;
     border-radius: 8px;
     width: 276px;
     height: 320px;
