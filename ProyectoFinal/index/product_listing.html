@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
-
     <header>
         <div class="title">
             <h1>Darling.</h1>
@@ -21,88 +20,93 @@
             <a href="">About</a>
             <a href="">Contact</a>
             <a href=""><img src="/ProyectoFinal/img/icono_perfil.png" alt=""></a>
-            <a href=""><img src="/ProyectoFinal/img/icono_shopping.png" alt=""></a>
+            <a href=""><img id="btnCart"  src="/ProyectoFinal/img/icono_shopping.png" alt=""></a>
         </ul>
     </header>
 
     <section class="first-part">
         <h1 class="title">Our Products</h1>
         <div class="search-input">
-            <i><img src="/ProyectoFinal/img/pl_Icono_Search.png" alt=""></i>
-            <input type="text" class="search-input" placeholder="Find jewelry you like">
+            <!-- <i><img src="/ProyectoFinal/img/pl_Icono_Search.png" alt=""></i> -->
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input id="filtroNombre" type="text" class="search-input" placeholder="Find jewelry you like">
         </div>
    </section>
 
    <section class="third-part-botones">
         <div class="botones-A">
-            <ul>
-                <button>All</button>
-                <button>Rings</button>
-                <button>Bracelets</button>
-                <button>Necklaces</button>
-                <button>Earrings</button>
+            <ul name="filtro" onchange="filtrarProductos(event)" >
+                <button value="todos">All</button>
+                <button value="Anillo">Rings</button>
+                <button value="Brazalete">Bracelets</button>
+                <button value="Collar">Necklaces</button>
+                <button value="Pendientes">Earrings</button>
             </ul>
 
             <div class="custom-input">
-                <label for="miTexto">Sort by price</label>
-                <div class="arrow-icon">ᐯ</div>
+                <select id="filtroPrecio">
+                    <option value="nada">Sort by price</option>
+                    <option value="menor">Highest to lowest</option>
+                    <option value="mayor">Lowest to highest</option>
+                    <option value="todos">All</option>
+                </select> 
                 <div class="underline"></div>
             </div>
         </div>
    </section>
 
-   <article class="third-part-imgA">
+   <article id="productosFiltrados" class="third-part-imgA">
         <div>
-            <a href="/ProyectoFinal/index/product_details.html">
+            <figure >
                 <img src="/ProyectoFinal/img/pl_c2_img1.png" alt="">
-            </a>
+            </figure>
             <p class="title">Luxury Gems Necklace</p>
             <p class="text">$168.76</p>
         </div>
         <div>
-            <a href="/ProyectoFinal/index/product_details.html">
+            <figure>
                 <img src="/ProyectoFinal/img/pl_c2_img2.png" alt="">
-            </a>
+            </figure>
             <p class="title">Aurora Ring</p>
             <p class="text">$125.28</p>
         </div>
-        <div>
-            <a href="/ProyectoFinal/index/product_details.html">
+        <div data-click=productCard>
+            <a href="">
                 <img src="/ProyectoFinal/img/pl_c2_img3.png" alt="">
             </a>
             <p class="title">Reflections Necklace</p>
             <p class="text">$620.73</p>
         </div>
-        <div>
-            <a href="/ProyectoFinal/index/product_details.html">
+        <div data-click=productCard>
+            <a href="">
                 <img src="/ProyectoFinal/img/pl_c2_img4.png" alt="">
             </a>
             <p class="title">Dreamy Infinity Ring</p>
             <p class="text">$327.71</p>
         </div>
-        <div>
-            <a href="/ProyectoFinal/index/product_details.html">
+        <div data-click=productCard>
+            <a href="">
                 <img src="/ProyectoFinal/img/pl_c2_img5.png" alt="">
             </a>
             <p class="title">Opulent Jewels Ring</p>
             <p class="text">$168.76</p>
         </div>
-        <div>
-            <a href="/ProyectoFinal/index/product_details.html">
+        <div data-click=productCard>
+            <a href="">
                 <img src="/ProyectoFinal/img/pl_c2_img6.png" alt="">
             </a>
             <p class="title">Serene Solitaire Earrings</p>
             <p class="text">$125.28</p>
         </div>
-        <div>
-            <a href="/ProyectoFinal/index/product_details.html">
+        <div data-click=productCard>
+            <a href="">
                 <img src="/ProyectoFinal/img/pl_c2_img7.png" alt="">
             </a>
             <p class="title">Timeless Halo Earrings</p>
             <p class="text">$620.73</p>
         </div>
-        <div>
-            <a href="/ProyectoFinal/index/product_details.html">
+        <div data-click=productCard>
+            <a href="">
                 <img src="/ProyectoFinal/img/pl_c2_img8.png" alt="">
             </a>
             <p class="title">Exquisite Earrings</p>
@@ -110,44 +114,44 @@
         </div>
    </article>
     
-    <article class="fourth-part">
+    <article id="productosFiltradosB" class="fourth-part">
 
         <span class="fourth-part-A">
-            <div>
-                <a href="/ProyectoFinal/index/product_details.html">
+            <div >
+                <figure>
                     <img src="/ProyectoFinal/img/pl_c3_img1.png" alt="">
-                </a>
+                </figure>
                 <p class="title">Timeless Elegance Ring</p>
                 <p class="text">$168.76</p>
             </div>
         </span>
 
         <span class="fourth-part-B">
-            <div>
-                <a href="/ProyectoFinal/index/product_details.html">
+            <div data-click=productCard>
+                <figure>
                     <img src="/ProyectoFinal/img/pl_c3_img2.png" alt="">
-                </a>
+                </figure>
                 <p class="title">Luxury Charms Ring</p>
                 <p class="text">$620.73</p>
             </div>
             <div>
-                <a href="/ProyectoFinal/index/product_details.html">
+                <figure>
                     <img src="/ProyectoFinal/img/pl_c3_img3.png" alt="">
-                </a>
+                </figure>
                 <p class="title">Blissful Bloom Ring</p>
                 <p class="text">$620.73</p>
             </div>
-            <div>
-                <a href="/ProyectoFinal/index/product_details.html">
+            <div data-click=productCard>
+                <figure>
                     <img src="/ProyectoFinal/img/pl_c3_img4.png" alt="">
-                </a>
+                </figure>
                 <p class="title">Sparkling Ring </p>
                 <p class="text">$620.73</p>
             </div>
-            <div>
-                <a href="/ProyectoFinal/index/product_details.html">
+            <div data-click=productCard>
+                <figure>
                     <img src="/ProyectoFinal/img/pl_c3_img5.png" alt="">
-                </a>
+                </figure>
                 <p class="title">Glimmering Ring</p>
                 <p class="text">$620.73</p>
             </div>
@@ -228,6 +232,18 @@
             </div>
         </article>
     </footer>
+
+    <div class="modalCart hidden">
+        <section>
+            <button id="closeModal">X</button>
+            <span>Contenido del Modal</span>
+        </section>
+    </div>
+    
+    <script type="module" src="../javascript/listProducts.js"></script>
+    <script type="module" src="../javascript/product_listing.js"></script>
+    <script type="module" src="../javascript/modalCart.js" type="module"></script>
+    
     
 </body>
 </html>

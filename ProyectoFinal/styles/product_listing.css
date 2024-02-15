@@ -74,6 +74,30 @@ footer section {
     padding: 0;
 }
 
+
+.modalCart{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(71, 69, 62, 0.498);
+    z-index: 9999;
+    visibility: hidden;
+}
+
+.show{
+    visibility: visible !important;
+}
+
+.modalCart section{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+
 .first-part{
     background-image: url('/ProyectoFinal/img/VectorFondo.png');
     text-align: center;
@@ -123,11 +147,13 @@ footer section {
     padding: 12px 20px 11px 20px;
     border-radius: 26px;
     border: 1px;
+    
 }
 
 .search-input input::placeholder {
     color: #323842;
     padding-left: 20px;
+    margin-left: 20px;
 }
 
 /*second part botones*/
@@ -187,17 +213,23 @@ footer section {
     text-align: left;
 }
 
-.custom-input .arrow-icon {
-    position: absolute;
-    right: -20px;
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none;
+.custom-input select{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-family: var(--tipografia-text);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    border: none;
+    
+
 }
 
 .custom-input .underline {
     position: absolute;
-    width: 120%;
+    width: 100%;
     height: 2px;
     background-color: #9095A0;
     bottom: 0;
@@ -233,6 +265,14 @@ section .third-part-imgA{
     border-radius: 8px;
     width: 276px;
     height: 404px;
+    cursor: pointer;
+}
+
+.third-part-imgA div img{
+    border: 1px solid gainsboro; 
+    border-radius: 8px;
+    width: 276px;
+    height: 320px;
 }
 
 .fourth-part-A{
@@ -271,6 +311,15 @@ section .third-part-imgA{
     border: 1px solid gainsboro; 
     border-radius: 8px;
 }
+
+
+.fourth-part-A div img {
+    width: 576px;
+    height: 826px;
+    justify-content: center;
+    border-radius: 8px;
+}
+
 
 .fourth-part .title{
     font-size: 24px;
@@ -516,7 +565,7 @@ footer{
         place-items: center;
         height: 40vh;
     }
-
+    
     .search-input input {
         width: 500px
     }
@@ -542,10 +591,11 @@ footer{
         flex-wrap: wrap; 
     }
 
-    .fourth-part-A div img{
+    .fourth-part-A div img {
         width: 178px;
+        height: 220px;
     }
-
+    
     .fourth-part-B div img{
         width: 178px;
     }

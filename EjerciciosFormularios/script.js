@@ -137,6 +137,8 @@ const agragarProducto = (dataForm, listaProductos) => {
 }
 
 
+
+
 insertarProductos(contenedorProductos, products)
 
 form.addEventListener("submit", (evento) => {

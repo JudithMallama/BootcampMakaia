@@ -22,7 +22,7 @@
             <a href="/ProyectoFinal/index/checkout_cart.html">About</a>
             <a href="">Contact</a>
             <a href=""><img src="img/icono_perfil.png" alt=""></a>
-            <a href=""><img src="img/icono_shopping.png" alt=""></a>
+            <a href=""><img id="btnCart" src="img/icono_shopping.png" alt="cart"></a>
         </ul>
     </header>
 
@@ -205,7 +205,7 @@
         </article>
     </section>
 
-    <script type="text/javascript" src="./javascript/index.js"></script>
+    <!-- <script type="text/javascript" src="./javascript/index.js"></script> -->
 
     <footer>
         <article class="footer-A">
@@ -248,6 +248,15 @@
             </div>
         </article>
     </footer>
+
+    <div class="modalCart hidden">
+        <section>
+            <button id="closeModal">X</button>
+            <span>Contenido del Modal</span>
+        </section>
+    </div>
+
+    <script type="module" src="./javascript/modalCart.js"></script>
     
 </body>
 </html>
