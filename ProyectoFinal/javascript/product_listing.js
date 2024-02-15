@@ -1,5 +1,3 @@
-alert("Me concete al product listing");
-
 import listaProductos from "../javascript/listProducts.js";
 
 const filtroBotones = document.querySelectorAll('[name="filtro"] button');
@@ -7,7 +5,69 @@ const filtroBotones = document.querySelectorAll('[name="filtro"] button');
 const inputFiltroNombre = document.getElementById("filtroNombre");
 
 const priceSelect = document.getElementById("filtroPrecio");
+//Imprimir los primeros 8 productos
+const contenedorProductos = document.getElementById("productosFiltrados")
+//console.log(contenedorProductos)
+const contenedorProductosB = document.getElementById("productosFiltradosB")
+//console.log(contenedorProductosB);
 
+const goToDetails = () => {
+  const cards = document.querySelectorAll(".third-part-imgA")
+  cards.forEach((card) => {
+    card.addEventListener("click", () => {
+      const idProduct = card.getAttribute("name")
+      // console.log("id del pro", idProduct);
+      if (idProduct != null) {
+        console.log("id del pro", idProduct);
+        localStorage.setItem("idProduct", JSON.stringify(idProduct))
+        location.href = "/ProyectoFinal/index/product_details.html";
+      }
+
+    })
+  })
+}
+
+////
+const pintarProducts = (contenedor, listaProductos) => {
+  contenedor.innerHTML = "";
+  listaProductos.forEach(producto => {
+    console.log("id", producto.id);
+    if (producto.id>=9 && producto.id<=16) {
+      contenedor.innerHTML += `
+    <article id="productosFiltrados" class="third-part-imgA" name="${producto.id}">
+        <div >
+            <figure>
+                <img src= ${producto.imagenes[0]} alt=${producto.nombre}}>     
+            </figure>
+            <p class="title">${producto.nombre}</p>
+            <p class="text">$${producto.precioUnitario}</p>
+        </div>
+        `;
+    }
+  });
+  goToDetails();
+}
+
+pintarProducts(contenedorProductos,listaProductos)
+
+const insertarProductosA = (contenedor, listaProductos) => {
+  contenedor.innerHTML = "";
+  listaProductos.forEach(producto => {
+    console.log("id", producto.id);
+    contenedor.innerHTML += `
+    <article id="productosFiltrados" class="third-part-imgA" name="${producto.id}">
+        <div >
+            <figure>
+                <img src= ${producto.imagenes[0]} alt=${producto.nombre}}>     
+            </figure>
+            <p class="title">${producto.nombre}</p>
+            <p class="text">$${producto.precioUnitario}</p>
+        </div>
+        `;
+
+  });
+  goToDetails();
+}
 
 
 const filtrarProductos = (tipoAccesorio) => {
@@ -22,7 +82,6 @@ const filtrarProductos = (tipoAccesorio) => {
   insertarProductosA(contenedorProductos, productosFiltrados);
   return productosFiltrados;
 };
-
 
 filtroBotones.forEach((boton) => {
   boton.addEventListener("click", () => {
@@ -78,48 +137,7 @@ const ordenarProductosPorPrecio = (event) => {
 
 priceSelect.addEventListener("change", ordenarProductosPorPrecio);
 
-//Imprimir los primeros 8 productos
-const contenedorProductos = document.getElementById("productosFiltrados")
-console.log(contenedorProductos)
-const contenedorProductosB = document.getElementById("productosFiltradosB")
-console.log(contenedorProductosB);
-
-
-const insertarProductosA = (contenedor, listaProductos) => {
-  contenedor.innerHTML = "";
-  listaProductos.forEach(producto => {
-    console.log("pr", producto.id);
-    contenedor.innerHTML += `
-    <article name=${producto.id} id="productosFiltrados" class="third-part-imgA"}>
-        <div data-click=productCard>
-            <a href="">
-                <img src= ${producto.imagenes[0]} alt=${producto.nombre}}>     
-            </a>
-            <p class="title">${producto.nombre}</p>
-            <p  class="text">$${producto.precioUnitario}</p>
-        </div>
-        `;
-
-  });
-}
 
 
 
-const goToDetails = () => {
-  const cards = document.querySelectorAll("third-part-imgA");
-  console.log("Es este", cards)
 
-  cards.forEach((card) => {
-    //event.preventDefault();
-    card.addEventListener("click", () => {
-      console.log("card", card.getAttribute("name"));
-    })
-  })
-}
-//event.preventDefault();
-
-
-// location.href = "/ProyectoFinal/index/product_details.html";
-
-
-goToDetails()
